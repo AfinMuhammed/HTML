@@ -263,15 +263,11 @@ body{
                 display:flex;
                 justify-content:space-between;
                 padding:16px 30px;
-                
                 font-size:15px;
                 color: black;
                 position: relative;
                 top: 160px;
                 font-family: arial;
-                flex-shrink: 0;
-                
-                
             }
             .footer2-1>a{
                 display: block-inline;
@@ -283,7 +279,6 @@ body{
                 box-sizing: border-box;
                 font-family: arial;
                 opacity: 0.5;
-                
             }
             .footer2-2>a{
                 display: block-inline;
@@ -294,13 +289,10 @@ body{
                 box-sizing: border-box;
                 font-family: arial;
                 opacity: 0.5;
-                
             }
             .footer2-1>a:hover, .footer2-2>a:hover{
                 text-decoration-line: underline;
             }
-            
-           
             .s1{
                 display: block-inline;
                 margin-left: 25px;
@@ -316,7 +308,6 @@ body{
             .s1:hover{
                 text-decoration-line: underline;
                 position: relative;
-                
             }
             .dd{
                 display: none;
@@ -326,9 +317,7 @@ body{
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
                 cursor: pointer;
-            }
-            
-            
+            }    
             .content {
             background-color: transparent;
             color: black;
@@ -336,8 +325,7 @@ body{
             font-size: 14px;
             border: none;
             cursor: pointer;
-            text-decoration: none;
-            
+            text-decoration: none;    
             }
 
             .drd {
