@@ -2,16 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
-.header{
-	
-}
 .clear{
 	clear: both;
 }
 .menu{
 	width: 4%;
 	float: left;
-	
 }
 #menuBar{
 	padding: 20px 0px 17px 24px;
@@ -19,14 +15,12 @@
 .logo{
 	width: 15%;
 	float: left;
-	
 	padding: 5px;
 }
 .search{
 	width: 45%;
 	float: left;
-	padding: 4px 0px;s
-	
+	padding: 4px 0px;
 }
 .searchbar{
 	width: 95%;
@@ -151,7 +145,7 @@ hr{
 }
 .rightNav{
 	float:left;
-	/*border:1px solid black;*/
+	border-left: 1px solid rgb(0,0,0,0.2);
 	width: 3%;
 
 }
@@ -266,6 +260,13 @@ hr{
 	background-repeat: no-repeat;
 	margin: 25px  auto;
 }
+#plus{
+	margin: 30px 15px;
+}
+#bottomAngle{
+	margin: 240px 15px 20px 15px;
+
+}
 .topNav{
 }
 .check{
@@ -288,29 +289,131 @@ hr{
 	opacity: 0.5;
 }
 .started{
-	border:1px solid black;
+	border:1px solid rgb(0, 0, 0, .1);
 	border-radius: 5px;
 	margin:15px 0;
 }
+.close{
+	margin:20px;
+}
 .get{
+	float:left;
 	font-family: arial;
 	font-size: 15px;
-	margin: 20px;
 	font-weight: bold;
 	opacity:0.7;
 }
+.fa-xmark{
+	float:right;
+}
 .settingsBlue{
 	float:left;
-	width:33%;
-	border:1px solid black;
+	width:25%;
+	margin: 0px 20px;
+	padding-bottom: 30px;
 }
 .greenTick{
 	float:left;
-	width:33%;
-	border:1px solid black;	
+	width:25%;
+	margin: 0px 20px;
+	padding-bottom: 30px;
 }
 .redBell{
 	float:left;
-	width:33%;
-	border:1px solid black;	
+	width:25%;
+	margin: 0px 20px;
+	padding-bottom: 30px;
 }
+.settingsIcon, .tickIcon, .bellIcon{
+	float: left;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: 25px;
+	background-repeat: no-repeat;
+}
+.settingsIcon{
+	background-color:#e8f0fe;
+	background-image: url("../assets/icons/settingsBlue.png");
+}
+.tickIcon{
+	background-color:#1e8e3e;
+	background-image: url("../assets/icons/tick.png");
+}
+.bellIcon{
+	background-color:#fce8e6;
+	background-image: url("../assets/icons/bell.png");
+}
+.settingsText, .tickText, .bellText{
+	width: 50%;
+	padding:5px;
+	float:left;
+	font-family: arial;
+	font-size: 15px;
+	margin:12px 20px;
+	opacity:0.7;
+	cursor: pointer;
+}
+.settingsText:hover, .tickText:hover, .bellText:hover{
+	background-color:rgb(0,0,0,0.1);
+}
+
+.square{
+	width: 5%;
+	float:left;
+	padding: 7px;
+}
+.sqIcon{
+	width:20px;
+	height:20px;
+	background-image: url("../assets/icons/square.png");
+	background-position:center center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+.star{
+	width: 5%;
+	float:left;
+	padding: 7px 0;
+}
+.stIcon{
+	width:20px;
+	height:20px;
+	background-image: url("../assets/icons/starb.png");
+	background-position:center center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+.sub{
+	width: 20%;
+	float:left;
+	padding: 7px 0;
+}
+.con{
+	width: 50%;
+	float:left;
+	padding: 7px 0;
+}
+.time{
+	width: 16%;
+	float:left;
+	padding: 7px 0;
+	text-align:right;
+}
+.mailInbox{
+	opacity:0.7;
+}
+.scroll{
+	height: 550px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.sub, .con, .time{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
