@@ -145,7 +145,7 @@ hr{
 }
 .mainNav{
 	float:left;
-	border:1px solid black;
+	/*border:1px solid black;*/
 	width: 78%;
 
 }
@@ -155,24 +155,25 @@ hr{
 	width: 3%;
 
 }
-.compose{
-	/*border:1px solid black;*/
-}
 .inbox{
 	/*border:1px solid black;*/
 	margin: 10% 0% 5% 5%;
+	cursor:pointer;
 }
 .chat{
 	/*border:1px solid black;*/
 	margin: 10% 0% 5% 5%;
+	cursor:pointer;
 }
 .space{
 	/*border:1px solid black;*/
 	margin: 10% 0% 5% 5%;
+	cursor:pointer;
 }
 .meet{
 	/*border:1px solid black;*/
 	margin: 10% 0% 5% 5%;
+	cursor:pointer;
 }
 .composebg{
 	margin: 10% 30% 5% 2%;
@@ -266,10 +267,50 @@ hr{
 	margin: 25px  auto;
 }
 .topNav{
-	padding: 10px;
 }
 .check{
-	padding:20px;
-
+	margin-left:20px;
 }
-
+.fa-caret-down{
+	margin:5px;
+}
+.fa-arrow-rotate-right, .fa-ellipsis-vertical{
+	margin: 20px;
+}.fa-angle-left, .fa-angle-right{
+	float:right;
+	margin: 20px 30px 20px 0px;
+}
+.mailNumber{
+	font-family: arial;
+	font-size: 14px;
+	float:right;
+	margin: 20px;
+	opacity: 0.5;
+}
+.started{
+	border:1px solid black;
+	border-radius: 5px;
+	margin:15px 0;
+}
+.get{
+	font-family: arial;
+	font-size: 15px;
+	margin: 20px;
+	font-weight: bold;
+	opacity:0.7;
+}
+.settingsBlue{
+	float:left;
+	width:33%;
+	border:1px solid black;
+}
+.greenTick{
+	float:left;
+	width:33%;
+	border:1px solid black;	
+}
+.redBell{
+	float:left;
+	width:33%;
+	border:1px solid black;	
+}
