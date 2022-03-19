@@ -41,14 +41,13 @@
 }
 .active{
 	width: 12%;
-	float: left;
-	
+	float: right;
+	margin-top:5px;	
 }
 .active-bg{
 	float: left;
 	width: 65%;
 	border: 1px solid #eceff1;
-	border-opacity: 80%;
 	border-radius: 30%;
 	background-color: transparent;
 	background-image: url('../assets/icons/more.png');
@@ -74,7 +73,7 @@
 }
 .support{
 	width: 4%;
-	float: left;
+	float: right;
 	width: 30px;
 	height: 30px;
 	border-radius:50%;
@@ -83,11 +82,11 @@
 	background-position: center center;
 	background-size: 25px;	
 	background-repeat: no-repeat;
-	margin: 6px 5px 0px 7px;
+	margin: 10px 5px 0px 7px;
 }
 .settings{
 	width: 4%;
-	float: left;
+	float: right;
 	width: 30px;
 	height: 30px;
 	border-radius:50%;
@@ -96,11 +95,11 @@
 	background-position: center center;
 	background-size: 25px;	
 	background-repeat: no-repeat;
-	margin: 8px 5px 0px 7px;
+	margin: 10px 5px 0px 7px;
 }
 .apps{
 	width: 4%;
-	float: left;
+	float: right;
 	width: 30px;
 	height: 30px;
 	border-radius:50%;
@@ -109,12 +108,17 @@
 	background-position: center center;
 	background-size: 30px;	
 	background-repeat: no-repeat;
-	margin: 10px 5px 0px 7px;
+	margin: 12px 5px 0px 7px;
 }
-
+.apps, .settings, .support, .active-bg, .fa-bars,.account{
+	cursor:pointer;
+}
+.settings:hover, .apps:hover, .support:hover, .active-bg:hover, .inbox:hover, .c:hover{
+	background-color:rgba(60,64,67,0.078);
+}
 .account{
 	width: 12%;
-	float: left;
+	float: right;
 	border: 1px solid blue;
 	border-radius: 10%;
 	height: 40px;
@@ -149,25 +153,14 @@ hr{
 	width: 3%;
 
 }
-.inbox{
+.inbox,.chat,.space,.meet{
 	/*border:1px solid black;*/
-	margin: 10% 0% 5% 5%;
+	margin: 0% 0% 0% 5%;
+	padding: 5% 0;
 	cursor:pointer;
 }
-.chat{
-	/*border:1px solid black;*/
-	margin: 10% 0% 5% 5%;
-	cursor:pointer;
-}
-.space{
-	/*border:1px solid black;*/
-	margin: 10% 0% 5% 5%;
-	cursor:pointer;
-}
-.meet{
-	/*border:1px solid black;*/
-	margin: 10% 0% 5% 5%;
-	cursor:pointer;
+.c{
+	padding:auto;
 }
 .composebg{
 	margin: 10% 30% 5% 2%;
@@ -196,6 +189,7 @@ hr{
 	color: #757474;
 	font-weight:  bold;
 	margin-left: 9px;
+	cursor:row-resize;
 }
 .spacetext{
 	font-family: Arial, Roboto;
@@ -203,6 +197,7 @@ hr{
 	color: #757474;
 	font-weight:  bold;
 	margin-left: 9px;
+	cursor:row-resize;
 }
 .meettext{
 	font-family: Arial, Roboto;
@@ -264,7 +259,7 @@ hr{
 	margin: 30px 15px;
 }
 #bottomAngle{
-	margin: 240px 15px 20px 15px;
+	margin: 240px 15px 1px 15px;
 
 }
 .topNav{
@@ -351,12 +346,13 @@ hr{
 	float:left;
 	font-family: arial;
 	font-size: 15px;
-	margin:12px 20px;
+	margin:5px 20px;
 	opacity:0.7;
 	cursor: pointer;
 }
 .settingsText:hover, .tickText:hover, .bellText:hover{
 	background-color:rgb(0,0,0,0.1);
+	border-radius:5px;
 }
 
 .square{
@@ -407,7 +403,7 @@ hr{
 	opacity:0.7;
 }
 .scroll{
-	height: 550px;
+	height: 545px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -416,4 +412,9 @@ hr{
 	font-size: 15px;
 	font-weight: bold;
 }
-
+.rightNav div:hover{
+	background-color:rgba(60,64,67,0.078);
+}
+.rightNav div{
+	cursor:pointer;
+}
