@@ -8,8 +8,9 @@
 	clear: both;
 }
 .headerLine{
-	height:2px;
-	background-color: rgb(244, 130, 37);
+	height:4px;
+	background-color: rgb(244, 115, 7);
+	border: none;
 }
 .topHeader{
 	background-color:#f7f8f8;
@@ -43,6 +44,10 @@
 	padding: 10px 0;
 	text-indent:5%;
 	border: 1px solid #babfc4;
+	background-image:url("../assets/icons/search.png");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 0.2%;
 }
 .searchBar:focus
 {
@@ -77,4 +82,70 @@
 }
 .signup span, .login span{
 	margin: auto 15px;
+}
+.footer{
+	background-color:black;
+	color: white;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: arial;
+}
+.footLogo{
+	width:5%;
+	float: left;
+	border:1px solid red;
+}
+.footLogo img{
+	width:60px;
+}
+.stackOverflow{
+	width:17%;
+	float: left;
+	border:1px solid blue;
+}
+.Products{
+	width:13%;
+	float: left;
+	border:1px solid blue;
+}
+.Company{
+	width:15%;
+	float: left;
+	border:1px solid blue;
+}
+.stackExchange{
+	width:17%;
+	float: left;
+	border:1px solid blue;
+}
+.footerLinkHead{
+	margin:20px 10px;
+	opacity:0.8;
+}
+.footerLinks{
+	margin: 12px 10px;
+	opacity: 0.7;
+}
+.footerLinks a{
+	font-weight: normal;
+}
+.social{
+	width:25%;
+	float: left;
+	border:1px solid red;
+	margin: 20px 30px;
+}
+nav a{
+	font-size: 11px;
+	opacity: 0.7;
+}
+.social span{
+	margin-top: 20px;
+}
+.footerLast{
+	margin-top:230px;
+	opacity: 0.7;
 }
