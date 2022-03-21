@@ -1,0 +1,70 @@
+*{
+	margin:0;
+	pading:0;
+	font-family: arial;
+	font-size: 14px;
+}
+.clear{
+	clear: both;
+}
+.headerLine{
+	height:2px;
+	background-color:orange;
+}
+.logo{
+	width: 14%;
+	float:left;
+	border: 1px solid black;
+}
+.logo img{
+	width: 160px;
+	margin: 2px 0 0 10px;
+	padding:2px;
+}
+.about, .products, .team{
+	width: 6%;
+	float: left;
+	border: 1px solid black;
+	padding: 16px 3px;
+	opacity: 0.7;
+}
+.search{
+	width: 53%;
+	float:left;
+	border: 1px solid black;
+}
+.searchBar{
+	width:99%;
+	margin: 5px;
+	padding: 10px 0;
+	text-indent:5%;
+	border: 1px solid #babfc4;
+}
+.searchBar:focus
+{
+	outline: none;
+	border: 1px solid #6ebcf7;
+	box-shadow: 0 0 4px #0074cc;
+}
+.headerRight{
+	width: 12.5%;
+	float:right;
+	border: 1px solid black;
+}
+.login{
+	width:40%;
+	float:left;
+	padding:10px 0;
+	border: 1px solid black;
+	margin: 5px;
+}
+.signup{
+	width:40%;
+	float:left;
+	border: 1px solid black;
+	padding: 10px 0;
+	margin: 5px;
+}
+.signup span, .login span{
+	margin: auto 15px;
+}
