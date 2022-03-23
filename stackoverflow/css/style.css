@@ -14,6 +14,39 @@
 	color: rgb(94, 186, 131);
 	padding: 10px 0;
 }
+.rightMainThird{
+	color: rgb(0,0,0,0.7);
+}
+.msga{
+	width: 20px;
+	height: 20px;
+	background-image: ;
+	margin:10px 0;
+	background-image:url("../assets/icons/msga.png");
+	background-repeat:no-repeat;
+	background-position: 1%;
+	background-size: 20px;
+	transform: scaleX(-1);
+}
+.msgq{
+	width: 20px;
+	height: 20px;
+	background-image: ;
+	background-image:url("../assets/icons/msgq.png");
+	background-repeat:no-repeat;
+	background-position: 1%;
+	background-size: 20px;
+}
+.msgba{
+	width: 20px;
+	height: 20px;
+	background-image: ;
+	background-image:url("../assets/icons/msgba.png");
+	background-repeat:no-repeat;
+	background-position: 1%;
+	background-size: 20px;
+	transform: scaleX(-1);
+}
 .right{
 	float:right;
 }
@@ -239,6 +272,7 @@
 	border: 1px solid rgb(0,0,0,0.2);
 	outline:none;
 	color: rgb(0,0,0,0.5);
+	cursor: pointer;
 }
 .profileSelect:focus{
 	box-shadow:  0 0 10px 0 rgb(0,0,0,0.1);
@@ -283,11 +317,15 @@
 }
 .mainSection{
 	float: left;
+	width: 74%;
 	margin-left: 30px;
 }
 .leftSectionHead span{
 	padding-top: 10px;
-	font-size: 22px;
+	/* font-size: 22px; */
+}
+.font22{
+	font-size:22px;
 }
 .leftSectionCon{
 	border: 1px solid rgb(0,0,0,0.1);
@@ -375,6 +413,7 @@
 }
 ul.a{
 	 list-style-type: disc;
+	padding-left: 65px;
 }
 .badges{
 	margin-top: 60px;
@@ -405,6 +444,12 @@ ul.a{
 }
 .opacity5{
 	opacity: 0.5;
+}
+.opacity7{
+	opacity:0.7;
+}
+.paddingleft15{
+	padding-left:15px;
 }
 .badgebox1, .badgebox2{
 	width:30%;
@@ -473,6 +518,9 @@ ul.a{
 #font12{
 	font-size: 12px;
 }
+.font12{
+	font-size: 12px;
+}
 .sn{
 	border-left: 1px solid rgb(0,0,0,0.2); 
 	padding: 8px;
@@ -520,7 +568,7 @@ ul.a{
 	text-decoration: none;
 	color:rgb(10, 149, 255);
 	padding: 10px;
-	font-size: 18px;
+	font-size: 15px;
 }
 .footer{
 	background-color:black;
