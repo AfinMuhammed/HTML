@@ -183,10 +183,13 @@
 .rightMainContainer{
 	width:82%;
 	float: left;
-	border: 1px solid blue;
+	/*border: 1px solid blue;*/
 	padding: 30px;
 }
-
+.scroll{
+	height: 608px;
+	overflow-y: scroll;
+}
 .userDetails{
 	float:left;
 }
@@ -380,7 +383,7 @@ ul.a{
 	margin-top: 25px;
 }
 .tagcol{
-	padding:15px;
+	padding:10px;
 	border-bottom:1px solid rgb(0,0,0,0.2);
 }
 .tagcircle{
@@ -398,6 +401,7 @@ ul.a{
 .tagcolcon{
 	background-color: rgb(184, 216, 239,0.6);
 	padding: 5px;
+	color: rgb(66, 135, 245, 0.8);
 }
 .opacity5{
 	opacity: 0.5;
@@ -463,6 +467,9 @@ ul.a{
 	border-radius: 5px;
 	margin-left: 5px;
 }
+.mp{
+	margin: 0 7px;
+}
 #font12{
 	font-size: 12px;
 }
@@ -479,6 +486,32 @@ ul.a{
 	padding: 10px;
 	margin-left: 10px;
 	color: white;
+}
+.metaPostLogo{
+	height: 30px;
+	width: 30px;
+	background-size:30px;
+	background-position: 1%;
+	margin: 2px;
+	background-repeat: no-repeat;
+}
+.stackmeta{
+	background-image: url('../assets/icons/stackIcon.png');
+}
+.suser{
+	background-image: url('../assets/icons/su.png');
+	background-size: 20px;
+}
+.pers{
+	background-image: url('../assets/icons/stack.png');
+}
+.metapostnum{
+	border: 1px solid rgb(0,0,0,0.2);
+	color: rgb(0,0,0,0.5);
+	background-color: transparent;
+	padding: 5px 12px;
+	margin: 5px;
+	border-radius:5px;
 }
 .postlink, .postdate{
 	padding: 10px;
