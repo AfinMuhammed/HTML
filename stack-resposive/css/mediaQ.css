@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1427px) {
+
+ .button{
+  /* padding: 5px 5px;
+  margin: 10px 0px; */
+ }
+.leftMainContainer span, .menuSub a{
+  font-size:10px;
+}
+ .headerSearch{
+  flex: 40%;
+ }
+
+}
+@media only screen and (max-width: 1225px) {
+  .leftSectionHead span, .leftConCol{
+    font-size: 15px;
+}
+  .leftLinkname, .leftLinkvisitor, .va span{
+    font-size: 10px;
+}
+  .list, .list li {
+    margin: 10px 0;
+}
+  .font16, .mainSectionGPro, .mainSectionGPro a{
+    font-size: 10px;
+}
+
+}
