@@ -369,16 +369,16 @@ ul.a{
 .badges{
 	margin-top: 60px;
 }
-.badgebox1, .badgebox2{
+/* .badgebox1, .badgebox2{
 	width:30%;
 	margin: 3px 10px 5px 0;
 	border: 1px solid rgb(0,0,0,0.2);
 	padding: 15px 8px 15px 8px;
 	border-radius:5px;
-}
-.badgebox3{	
+} */
+.badgebox{	
 	width:30%;
-	margin: 3px 0px 5px 0;
+	margin: 3px 10px 5px 0;
 	border: 1px solid rgb(0,0,0,0.2);
 	padding: 15px 10px 15px 10px;
 	border-radius:5px;
@@ -421,4 +421,193 @@ ul.a{
 	border-radius:50%;
 	background-color:rgb(255, 204, 0);
 	margin-top: 4px;
+}
+/* tags */
+.tags{
+	margin-top: 25px;
+}
+.tagcol{
+	padding:10px;
+	border-bottom:1px solid rgb(0,0,0,0.2);
+}
+.tagcircle{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	background-color:rgb(255, 204, 0);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.tagsbox{
+	border: 1px solid rgb(0,0,0,0.2);
+	border-radius: 5px;
+}
+.tagcolcon{
+	background-color: rgb(184, 216, 239,0.6);
+	padding: 5px;
+	color: rgb(66, 135, 245, 0.8);
+}
+.opacity5{
+	opacity: 0.5;
+}
+.opacity7{
+	opacity:0.7;
+}
+.firstHeader span.font12{
+		font-size: 12px;
+}
+.sn{
+	border-left: 1px solid rgb(0,0,0,0.2); 
+	padding: 8px;
+	font-size: 12px;
+}
+.scoreNewest{
+	border: 1px solid rgb(0,0,0,0.2);
+	border-radius: 5px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+.activeScore{
+	background-color: rgb(227, 230, 232);
+}
+.msga{
+	width: 20px;
+	height: 20px;
+	background-image: ;
+	margin:10px 0;
+	background-image:url("../assets/icons/msga.png");
+	background-repeat:no-repeat;
+	background-position: 1%;
+	background-size: 20px;
+	transform: scaleX(-1);
+}
+.postnum{
+	background-color: rgb(94, 186, 131);
+	padding: 10px;
+	margin-left: 10px;
+	color: white;
+}
+.postlink, .postdate{
+	padding: 10px;
+}
+.postlink a{
+	text-decoration: none;
+	color:rgb(10, 149, 255);
+	padding: 10px;
+	font-size: 15px;
+}
+.msgq{
+	width: 20px;
+	height: 20px;
+	background-image: ;
+	background-image:url("../assets/icons/msgq.png");
+	background-repeat:no-repeat;
+	background-position: 1%;
+	background-size: 20px;
+}
+.msgba{
+	width: 20px;
+	height: 20px;
+	background-image: ;
+	background-image:url("../assets/icons/msgba.png");
+	background-repeat:no-repeat;
+	background-position: 1%;
+	background-size: 20px;
+	transform: scaleX(-1);
+}
+.metaPostLogo{
+	height: 30px;
+	width: 30px;
+	background-size:30px;
+	background-position: 1%;
+	margin: 2px;
+	background-repeat: no-repeat;
+}
+.stackmeta{
+	background-image: url('../assets/icons/stackIcon.png');
+}
+.metapostnum{
+	border: 1px solid rgb(0,0,0,0.2);
+	color: rgb(0,0,0,0.5);
+	background-color: transparent;
+	padding: 5px 12px;
+	margin: 5px;
+	border-radius:5px;
+}
+.postlink a{
+	text-decoration: none;
+	color:rgb(10, 149, 255);
+	padding: 10px;
+	font-size: 15px;
+}
+.suser{
+	background-image: url('../assets/icons/su.png');
+	background-size: 20px;
+}
+.pers{
+	background-image: url('../assets/icons/stack.png');
+}
+
+/* footer */
+.footer{
+	background-color:black;
+	color: white;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: arial;
+}
+.footLogo{
+	width:5%;
+	/* float: left; */
+}
+.footLogo img{
+	width:60px;
+}
+.stackOverflow{
+	width:17%;
+	/* float: left; */
+}
+.Products{
+	width:13%;
+	/* float: left; */
+}
+.Company{
+	width:15%;
+	/* float: left; */
+}
+.stackExchange{
+	width:20%;
+	/* float: left; */
+}
+.footerLinkHead{
+	margin:20px 10px;
+	opacity:0.8;
+}
+.footerLinks{
+	margin: 12px 10px;
+	opacity: 0.7;
+}
+.footerLinks a{
+	font-weight: normal;
+}
+.social{
+	width:25%;
+	/* float: left; */
+	margin: 20px 30px;
+}
+nav a{
+	font-size: 11px;
+	opacity: 0.7;
+	margin-right: 15px;
+}
+.social span{
+	margin-top: 20px;
+	font-size: 11px;
+}
+.footerLast{
+	margin-top:230px;
+	opacity: 0.7;
 }

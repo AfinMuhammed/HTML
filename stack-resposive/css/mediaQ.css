@@ -12,6 +12,24 @@
  }
 
 }
+@media only screen and (max-width: 985px) {
+  .headerabout, .headerteams{
+    display:none;
+  }
+  .headerproducts{
+    font-size: 15px;
+  }
+  .headerContents{
+    width: 10%;
+  }
+  .button{
+    font-size: 15px;
+  }
+
+}
+
+
+
 @media only screen and (max-width: 1225px) {
   .leftSectionHead span, .leftConCol{
     font-size: 15px;
@@ -25,5 +43,19 @@
   .font16, .mainSectionGPro, .mainSectionGPro a{
     font-size: 10px;
 }
+.badgeboxes{
+  display: block;
+}
+.badgebox{
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 1105px) {
+.postdate{
+  font-size: 10px;
+}
+
 
 }
