@@ -1,44 +1,40 @@
-@media only screen and (min-width:496px) and (max-width: 768px){
-  /* *{
-    background-color: blue;
-  }
- 
-  .headerproducts{
-    font-size:20px;
-  } */
-  .leftMainContainer {
-    display: none;
-  }
+@media only screen and (min-width: 985px)  and (max-width: 1427px) {
 
-
-}
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 980px){
-  .searchBar{
-    display: none;
-    width:5px;
-  }
-  
   .headerSearch{
-    /* width:5%; */
-    /* background-color: black; */
-    background-image: url('../assets/icons/search.png');
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: 100%;
+   flex: 40%;
   }
-  .headerproducts{
-    font-size: 35px;!important
+  .leftMainContainer{
+    flex: 18%;
+    margin-left: 0;
   }
-  .button{
-    /* padding: 10px 20px; */
+  .headerLogo{
+    padding: 5px;
   }
-}
+  .leftSection{
+    width:40%;
+  }
+  .sn{
+    font-size: 10px;
+  }
+  .scoreNewest{
+    margin-bottom: 35px;
+  }
+  .postlink a{
+    /* font-size: 12px; */
+  }
+  .postnum{
+    margin-bottom: 20px;
+  }
+  .badgeboxes{
+   display: block;
+ }
+ .badgebox{
+   width: 95%;
+ }
+ 
+ }
 
-
-@media only screen and (min-width: 980px) and (max-width: 985px) {
+ @media only screen and (min-width: 960px) and (max-width: 985px) {
   *{
     font-size: 15px;
   }
@@ -141,41 +137,329 @@
   .badgebox{
     width: 95%;
   }
+  
 
 }
 
-@media only screen and (min-width: 985px)  and (max-width: 1427px) {
-
+@media only screen and (min-width: 960px) and (max-width: 980px){
+  .searchBar{
+    display: none;
+    width:5px;
+  }
+  .headerabout, .headerteams{
+    display:none;
+  }
+  
   .headerSearch{
-   flex: 40%;
+    /* width:5%; */
+    /* background-color: black; */
+    width: 40%;
+    background-image: url('../assets/icons/search.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 100%;
   }
-  .leftMainContainer{
-    flex: 18%;
-    margin-left: 0;
+  .headerproducts{
+    font-size: 17px;
   }
-  .headerLogo{
-    padding: 5px;
+  .button{
+    font-size: 15px;
   }
-  .leftSection{
-    width:40%;
-  }
-  .sn{
-    font-size: 10px;
-  }
-  .scoreNewest{
-    margin-bottom: 35px;
-  }
-  .postlink a{
-    /* font-size: 12px; */
-  }
-  .postnum{
-    margin-bottom: 20px;
+  .headerContents{
+    width:10%;
   }
   .badgeboxes{
-   display: block;
- }
- .badgebox{
-   width: 95%;
- }
+    display: block;
+  }
+  .badgebox{
+    width: 95%;
+  }
+  .footer{
+    display: block;
+  }
+  .stackOverflow, .Products, .Company, .stackExchange, .social{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 90%;
+    margin-left:10px;
+  }
+  .footerlinkmain{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .footerLinkHead{
+    margin-bottom: 5px;
+    opacity:1;
+    color: white;
+  }
+  .social{
+    margin: 45px 0px 0px 20px;
+  }
+  .footerLast{
+    padding: 25px 0;
+    margin:0;
+  }
+}
+
+@media screen and (min-width:563px) and (max-width: 960px){
+  .leftMainContainer{
+    display: none;
+  }
+  .badgeboxes{
+    display: block;
+  }
+  .badgebox{
+    width: 95%;
+  }
+  .footer{
+    display: block;
+  }
+  .stackOverflow, .Products, .Company, .stackExchange, .social{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 90%;
+    margin-left:10px;
+  }
+  .footerlinkmain{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .footerLinkHead{
+    margin-bottom: 5px;
+    opacity:1;
+    color: white;
+  }
+  .social{
+    margin: 45px 0px 0px 20px;
+  }
+  .footerLast{
+    padding: 25px 0;
+    margin:0;
+  }
+  .searchBar{
+    display: none;
+    width:5px;
+  }
+  .headerabout, .headerteams{
+    display:none;
+  }
+  
+  .headerSearch{
+    /* width:5%; */
+    /* background-color: black; */
+    width: 30%;
+    background-image: url('../assets/icons/search.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+  .headerproducts{
+    font-size: 17px;
+  }
+  .button{
+    font-size: 15px;
+  }
+  .headerContents{
+    width:15%;
+  }
+  .main-Logo{
+    display: none;
+    /* width: 40%; */
+  }
+  .headerLogo{
+    width: 10%;
+    background-image: url('../assets/icons/menubar.png'), url('../assets/icons/stackIcon.png');
+    background-position: 1%, 75%;
+    background-repeat: no-repeat;
+    background-size:20px, 50px;
+    margin-left: 20px;
+  }
+  .userDetails{
+    display: block;
+  }
+  .profileDetails{
+    padding:0;
+  }
+  .pro, .acti{
+    padding: 15px 25px;
+  }
+  .rightMainThird{
+    display: block;
+  }
+  .leftSection{
+    width: 90%;
+  }
+  .leftSectionCon{
+    display: flex;
+    justify-content: space-between;
+  }
+  .leftConRow{
+    width: 30%;
+  }
+  .M-CommunitiesCon{
+    display: block;
+  }
+  .M-CommunitiesName{
+    font-size: 16px;
+  }
+  .mainSection{
+    width: 90%;
+  }
+  .font16{
+    font-size: 20px;
+  }
+  .angcon, .date{
+    font-size: 15px;
+  }
+} 
  
- }
+@media only screen and (max-width:562px){
+  .leftMainContainer{
+    display: none;
+  }
+  .badgeboxes{
+    display: block;
+  }
+  .badgebox{
+    width: 95%;
+  }
+  .footer{
+    display: block;
+  }
+  .stackOverflow, .Products, .Company, .stackExchange, .social{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 90%;
+    margin-left:10px;
+  }
+  .footerlinkmain{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .footerLinkHead{
+    margin-bottom: 5px;
+    opacity:1;
+    color: white;
+  }
+  .social{
+    margin: 45px 0px 0px 20px;
+  }
+  .footerLast{
+    padding: 25px 0;
+    margin:0;
+  }
+  .searchBar{
+    display: none;
+    width:5px;
+  }
+  .headerabout, .headerteams{
+    display:none;
+  }
+  
+  .headerSearch{
+    /* width:5%; */
+    /* background-color: black; */
+    width: 20%;
+    background-image: url('../assets/icons/search.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+  .headerproducts{
+    font-size: 17px;
+  }
+  .button{
+    font-size: 15px;
+  }
+  .headerContents{
+    width:15%;
+  }
+  .main-Logo{
+    display: none;
+    /* width: 40%; */
+  }
+  .headerLogo{
+    width: 10%;
+    background-image: url('../assets/icons/menubar.png'), url('../assets/icons/stackIcon.png');
+    background-position: 1%, 75%;
+    background-repeat: no-repeat;
+    background-size:20px, 50px;
+    margin-left: 20px;
+  }
+  .userDetails{
+    display: block;
+  }
+  .profileDetails{
+    padding:0;
+  }
+  .pro, .acti{
+    padding: 15px 25px;
+  }
+  .rightMainThird{
+    display: block;
+  }
+  .leftSection{
+    width: 90%;
+  }
+  .leftSectionCon{
+    display: flex;
+    justify-content: space-between;
+  }
+  .leftConRow{
+    width: 30%;
+  }
+  .M-CommunitiesCon{
+    display: block;
+  }
+  .M-CommunitiesName{
+    font-size: 16px;
+  }
+  .mainSection{
+    width: 90%;
+  }
+  .font16{
+    font-size: 20px;
+  }
+  .angcon, .date{
+    font-size: 15px;
+  }
+  .footerLinks a{
+    font-size: 10px;
+  }
+  .rightMainContainer{
+    padding: 0;
+  }
+  .footerLinks{
+    margin: 5px 10px;
+    width: auto;
+  }
+
+}
+
+
+
+
+
+
+
+ /* @media only screen and (max-width: 768px) {
+  *{
+    background-color: blue;
+  }
+ 
+  .headerproducts{
+    font-size:20px;
+  } 
+  .leftMainContainer {
+    display: none;
+  }
+
+
+} */
+
+
+/* @media screen and (max-width:768px){
+  .leftMainContainer{
+    display: none !important;
+  }
+} */
