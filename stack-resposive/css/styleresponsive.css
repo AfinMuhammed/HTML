@@ -44,6 +44,9 @@
 	background-position: 0.2%;
 	border-radius:5px;
 }
+.MediaSearch{
+	display: none;
+}
 .headerRight{
   /* flex:12%; */
   margin-right: 20px;
@@ -610,4 +613,7 @@ nav a{
 .footerLast{
 	margin-top:230px;
 	opacity: 0.7;
+}
+.footerlinkmain{
+	/* display: none; */
 }

@@ -1,18 +1,47 @@
-@media only screen and (max-width: 1427px) {
+@media only screen and (min-width:496px) and (max-width: 768px){
+  /* *{
+    background-color: blue;
+  }
+ 
+  .headerproducts{
+    font-size:20px;
+  } */
+  .leftMainContainer {
+    display: none;
+  }
 
- .button{
-  /* padding: 5px 5px;
-  margin: 10px 0px; */
- }
-.leftMainContainer span, .menuSub a{
-  font-size:10px;
-}
- .headerSearch{
-  flex: 40%;
- }
 
 }
-@media only screen and (max-width: 985px) {
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 980px){
+  .searchBar{
+    display: none;
+    width:5px;
+  }
+  
+  .headerSearch{
+    /* width:5%; */
+    /* background-color: black; */
+    background-image: url('../assets/icons/search.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+  .headerproducts{
+    font-size: 35px;!important
+  }
+  .button{
+    /* padding: 10px 20px; */
+  }
+}
+
+
+@media only screen and (min-width: 980px) and (max-width: 985px) {
+  *{
+    font-size: 15px;
+  }
   .headerabout, .headerteams{
     display:none;
   }
@@ -22,40 +51,131 @@
   .headerContents{
     width: 10%;
   }
-  .button{
+  .home a, .collectives a, .jobs a, .public a, .teamLast a {
     font-size: 15px;
+  }
+  .button{
+    font-size: 13px;
+  }
+  .userDetails{
+    display: block;
+  }
+  .profileDetails{
+    padding:0;
+  }
+  .pro, .acti{
+    padding: 15px 25px;
+  }
+  .rightMainThird{
+    display: block;
+  }
+  .leftSection{
+    width: 90%;
+  }
+  .leftSectionCon{
+    display: flex;
+    justify-content: space-between;
+  }
+  .leftConRow{
+    width: 30%;
+  }
+  .M-CommunitiesCon{
+    display: block;
+  }
+  .M-CommunitiesName{
+    font-size: 16px;
+  }
+  .mainSection{
+    width: 90%;
+  }
+  .font16{
+    font-size: 20px;
+  }
+  .angcon, .date{
+    font-size: 15px;
+  }
+  .footer{
+    display: block;
+  }
+  .stackOverflow, .Products, .Company, .stackExchange, .social{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 90%;
+    margin-left:10px;
+  }
+  .footerlinkmain{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .footerLinkHead{
+    margin-bottom: 5px;
+    opacity:1;
+    color: white;
+  }
+  .social{
+    margin: 45px 0px 0px 20px;
+  }
+  .footerLast{
+    padding: 25px 0;
+    margin:0;
+  }
+  .leftMainContainer a, .leftMainContainer span{
+    font-size:12px;
+  }
+  .teamP p{
+    font-size: 13px;
+  }
+  .headerSearch{
+    flex: 35%;
+  }
+  .headerLogo{
+    padding: 5px;
+  }
+  .leftMainContainer{
+    flex:18%;
+    margin-left: 0;
+  }
+  .badgeboxes{
+    display: block;
+  }
+  .badgebox{
+    width: 95%;
   }
 
 }
 
+@media only screen and (min-width: 985px)  and (max-width: 1427px) {
 
-
-@media only screen and (max-width: 1225px) {
-  .leftSectionHead span, .leftConCol{
-    font-size: 15px;
-}
-  .leftLinkname, .leftLinkvisitor, .va span{
+  .headerSearch{
+   flex: 40%;
+  }
+  .leftMainContainer{
+    flex: 18%;
+    margin-left: 0;
+  }
+  .headerLogo{
+    padding: 5px;
+  }
+  .leftSection{
+    width:40%;
+  }
+  .sn{
     font-size: 10px;
-}
-  .list, .list li {
-    margin: 10px 0;
-}
-  .font16, .mainSectionGPro, .mainSectionGPro a{
-    font-size: 10px;
-}
-.badgeboxes{
-  display: block;
-}
-.badgebox{
-  width: 100%;
-}
-
-}
-
-@media only screen and (max-width: 1105px) {
-.postdate{
-  font-size: 10px;
-}
-
-
-}
+  }
+  .scoreNewest{
+    margin-bottom: 35px;
+  }
+  .postlink a{
+    /* font-size: 12px; */
+  }
+  .postnum{
+    margin-bottom: 20px;
+  }
+  .badgeboxes{
+   display: block;
+ }
+ .badgebox{
+   width: 95%;
+ }
+ 
+ }
