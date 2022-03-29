@@ -433,7 +433,22 @@
     margin: 5px 10px;
     width: auto;
   }
-
+  .footerlinkmain{
+    display: block;
+  }
+  .M-score{
+    display: block;
+  }
+  .postnum{
+    font-size: 12px;
+    margin-bottom: 35px;
+  }
+  .postlink a{
+    font-size: 12px;
+  }
+  .msga{
+    width: 40px;
+  }
 }
 
 
