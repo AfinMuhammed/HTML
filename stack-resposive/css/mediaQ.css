@@ -222,6 +222,7 @@
   }
   .footerlinkmain{
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
   }
   .footerLinkHead{
@@ -247,7 +248,7 @@
   .headerSearch{
     /* width:5%; */
     /* background-color: black; */
-    width: 30%;
+    width: 25%;
     background-image: url('../assets/icons/search.png');
     background-size: 50px;
     background-repeat: no-repeat;
@@ -369,7 +370,8 @@
     font-size: 17px;
   }
   .button{
-    font-size: 15px;
+    font-size: 13px;
+    margin: 10px 2px;
   }
   .headerContents{
     width:15%;
@@ -388,25 +390,33 @@
   }
   .userDetails{
     display: block;
+    margin:10px;
   }
   .profileDetails{
     padding:0;
   }
-  .pro, .acti{
+  /* .pro, .acti{
     padding: 15px 25px;
-  }
+  } */
   .rightMainThird{
     display: block;
   }
   .leftSection{
     width: 90%;
+    margin: 10px;
+  }
+  .rightMainSecond{
+    margin: 5px 10px;
   }
   .leftSectionCon{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .leftConRow{
     width: 30%;
+    /* flex-wrap: wrap; */
+    flex-basis: 50%;
   }
   .M-CommunitiesCon{
     display: block;
@@ -415,10 +425,11 @@
     font-size: 16px;
   }
   .mainSection{
-    width: 90%;
+    width: 85%;
+    margin-bottom: 20px;
   }
   .font16{
-    font-size: 20px;
+    font-size: 15px;
   }
   .angcon, .date{
     font-size: 15px;
@@ -434,7 +445,8 @@
     width: auto;
   }
   .footerlinkmain{
-    display: block;
+    /* display: block; */
+    flex-wrap: wrap;
   }
   .M-score{
     display: block;
@@ -442,12 +454,43 @@
   .postnum{
     font-size: 12px;
     margin-bottom: 35px;
+    width: 10%;
   }
   .postlink a{
     font-size: 12px;
   }
+  .postlink{
+    text-align: center;
+    padding: 5px;
+    width: 60%;
+  }
   .msga{
-    width: 40px;
+    width: 10%;
+  }
+  .postdate{
+    width: 15%;
+  }
+  .headerSearch{
+    width: 10%;
+    background-size: 30px;
+  }
+  .leftProfile{
+    margin:10px;
+  }
+  .leftConCol, .leftspan{
+    font-size: 12px;
+  }
+  .profileName{
+    font-size: 25px;
+  }
+  .profileQual{
+    font-size: 15px;
+  }
+  .profileExp, .profilePlace{
+    font-size: 10px;
+  }
+  .profileSelect{
+    padding: 8px 5px;
   }
 }
 

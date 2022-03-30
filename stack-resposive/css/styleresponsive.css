@@ -29,7 +29,7 @@
   opacity: 0.5;
 }
 .headerSearch{
-  width:54%;
+  width:50%;
   margin: 5px 10px;
 }
 .searchBar{	
@@ -58,6 +58,10 @@
 	color: rgb(83, 142, 184);	
   border-radius: 5px;
 	background-color:rgb(225, 236, 244);
+}
+.signup{
+	background-color: rgb(10,149,255) !important;
+	color: rgb(255,255,255);
 }
 .spaceevenly{
   display: flex;
