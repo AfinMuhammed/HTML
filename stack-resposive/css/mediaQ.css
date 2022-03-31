@@ -26,10 +26,13 @@
     margin-bottom: 20px;
   }
   .badgeboxes{
-   display: block;
+   flex-wrap: wrap;
  }
- .badgebox{
-   width: 95%;
+ .box-gold, .box-silver{
+   width: 40%;
+ }
+ .box-bronze{
+    width: 95%;
  }
  
  }
@@ -203,8 +206,10 @@
 
 @media screen and (min-width:563px) and (max-width: 960px){
   .leftMainContainer{
+    /* position: sticky; */
     display: none;
-  }
+    /* flex: 35%;*/
+  } 
   .badgeboxes{
     display: block;
   }
@@ -313,6 +318,18 @@
     font-size: 15px;
   }
 } 
+ /* @media screen and (max-width: 960px){
+  .leftMainContainer{
+    width: 30%;
+  }
+}  */
+@media only screen and (min-width: 562px) and (max-width: 700px){
+.leftMainContainer{
+  display: none;
+}
+  
+}
+
  
 @media only screen and (max-width:562px){
   .leftMainContainer{
