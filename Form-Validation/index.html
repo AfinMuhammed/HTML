@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/form-css.css">
+    <script>
+      function f1(){
+        var a1=document.form1.fname.value;
+        var a2=document.form1.lname.value;
+          if(a1.length<8){
+            alert('success');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Form Validation Using Javascript</h3>
+    <form name="form1" action="" method="" onsubmit="return f1()" name="form1" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td><label for="fname">First Name</label></td>
+          <td><input type="text" title="First Name" placeholder="First Name" name="fname" /></td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last Name</label></td>
+         <td><input type="text" title="Last Name" placeholder="Last Name" name="lname" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email ID</label></td>
+          <td><input type="email" title="Email ID" placeholder="Email ID" name="email"></td>
+       </tr>
+       <tr>
+        <td><label for="mob">Mobile Number</label></td>
+        <td><input type="number" title="Mobile Number" placeholder="Mobile Number" name="mob"></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td><input type="submit" value="Submit"></td>
+       </tr>
+      </table>
+    </form>
+  </body>
+</html>
