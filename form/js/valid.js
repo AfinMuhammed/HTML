@@ -1,11 +1,10 @@
-let fname = document.getElementById('fname');
-    lname = document.getElementById('lname');
-    dob = document.getElementById('dob');
-    address = document.getElementById('address');
-    email = document.getElementById('email');
-    mob = document.getElementById('mob');
-    error = document.getElementsByClassName('error');
-    
+    var fname = document.getElementById('fname');
+    var lname = document.getElementById('lname');
+    var dob = document.getElementById('dob');
+    var address = document.getElementById('address');
+    var email = document.getElementById('email');
+    var mob = document.getElementById('mob');
+    var error = document.getElementsByClassName('error');
     var pass1 = document.getElementById('pass1');
     var pass2 = document.getElementById('pass2');
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -93,13 +92,13 @@ function validate(){
     else{
         error[7].innerHTML = "";
      }
-    // //confirmpassword
-    // if(pass1 != pass2){
-    //     error[8].innerHTML = "Passwords Donot Match";
-    // }
-    // else{
-    //     error[8].innerHTML = "Success";
-    // }
+    //confirmpassword
+    if(pass1.value === pass2.value){
+        error[8].innerHTML = "success";
+    }
+    else{
+        error[8].innerHTML = "Password do not Match";
+    }
     
 
 }
