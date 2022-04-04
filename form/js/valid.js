@@ -1,9 +1,11 @@
+    var form1 = document.getElementById('form1');
     var fname = document.getElementById('fname');
     var lname = document.getElementById('lname');
     var dob = document.getElementById('dob');
     var address = document.getElementById('address');
     var email = document.getElementById('email');
     var mob = document.getElementById('mob');
+    var img = document.getElementById('img');
     var error = document.getElementsByClassName('error');
     var pass1 = document.getElementById('pass1');
     var pass2 = document.getElementById('pass2');
@@ -54,51 +56,83 @@ function validate(){
         error[2].innerHTML = "";
     }
     else{
-        error[2].innerHTML = "Please Choose Your Gender";
+        error[2].innerHTML = "*Please Choose Your Gender";
         error[2].style.color = "yellow";
     }
     //dob
     if(dob.value == ''){
-        error[3].innerHTML = "Please Select your Date OF Birth";
+        error[3].innerHTML = "*Please Select your Date OF Birth";
+        dob.style.borderBottom="2px solid red";
     }
     else{
         error[3].innerHTML = "";
+        dob.style.borderBottom="2px solid green";
     }
     //address
     if(address.value == ''){
-        error[4].innerHTML = "Please type your Address";
+        error[4].innerHTML = "*Please type your Address";
+        address.style.borderBottom="2px solid red";
     }
     else{
         error[4].innerHTML = "";
+        address.style.borderBottom="2px solid green";
     }
     //Email
     if(!email.value.match(mailformat)){
-        error[5].innerHTML = "Enter Valid Email ID";
+        error[5].innerHTML = "*Enter Valid Email ID";
+        email.style.borderBottom="2px solid red";
     }
     else{
         error[5].innerHTML = "";
+        email.style.borderBottom="2px solid green";
     }
     //MobileNumber
     if(!mob.value.match(phoneno)){
-        error[6].innerHTML = "Enter 10 Digit Mobile Number";
+        error[6].innerHTML = "*Enter 10 Digit Mobile Number";
+        mob.style.borderBottom="2px solid red";
+        
     }
     else{
         error[6].innerHTML = "";
+        mob.style.borderBottom="2px solid green";
     }
+    //Image
+    var valid = true;
+    if(img.files.length != 0)
+    {
+       valid = true;
+       error[7].innerHTML = "";
+       img.style.borderBottom="2px solid green";
+    }
+    else
+    {
+        valid = false;
+        error[7].innerHTML = "*Please select any image file";
+        img.style.borderBottom="2px solid red";
+    }
+
     //password
     if(!pass1.value.match(password)){
-        error[7].innerHTML = "Should Contain at least one digit, at least one lower case, at least one upper case,at least 8 from the mentioned characters";
+        error[8].innerHTML = "**Should Contain at least one digit, at least one lower case, at least one upper case,at least 8 from the mentioned characters";
+        pass1.style.borderBottom="2px solid red";
     }
     else{
-        error[7].innerHTML = "";
+        error[8].innerHTML = "";
+        pass1.style.borderBottom="2px solid green";
      }
     //confirmpassword
     if(pass1.value === pass2.value){
-        error[8].innerHTML = "success";
+        error[9].innerHTML = "Success";
+        pass2.style.borderBottom="2px solid green";
     }
     else{
-        error[8].innerHTML = "Password do not Match";
+        error[9].innerHTML = "**Password do not Match";
+        pass2.style.borderBottom="2px solid red";
     }
     
+    if(pass2.value == "" ){
+        error[9].innerHTML = "";
+        pass2.style.borderBottom="2px solid rgb(0,0,0,0.5)";
+    }
 
 }
