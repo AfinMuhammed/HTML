@@ -3,71 +3,51 @@
 
 <head>
   
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/validation.js"></script>
+  <script src="js/val.js"></script>
   <title>Form Validation</title>
-  <script>
-    function printError(elemId, hintMsg) {
-    document.getElementById(elemId).innerHTML = hintMsg;
-}
-
-// Defining a function to validate form 
-function validateForm() {
-    // Retrieving the values of form elements 
-    var name = document.contactForm.name.value;
-    
-    
-	// Defining error variables with a default value
-    var nameErr = true;
-    
-    // Validate name
-    if(name == "a") {
-        printError("nameErr", "Please enter your nam");
-    } 
-}
-  </script>
 </head>
 
 <body>
   <div class="mainContainer">
     <div class="heading">
       <h3>Form Validation Using Javascript</h3>
-    </div><form name="contactForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post">
-    <!-- <form action="" method="post" enctype="multipart/form-data" name="form1"  onsubmit="return validateForm()" autocomplete="on"> -->
+    </div>
+    <form action="" method="post" id="form" enctype="multipart/form-data" name="form1"  onsubmit="return validateForm()" autocomplete="on">
       <div class="labelhead"><Label>User Details</Label></div>
       <div class="f1">
-        <input type="text" name="name" placeholder="First Name" title="First Name">
-        
-        <div class="error" id="nameErr">s</div>
+        <input type="text" name="name" id="username" placeholder="First Name" title="First Name" ><small class="error"></small>
       </div>
       <div class="f1">
-        <input type="text" name="lname" placeholder="Last Name" title="Last Name"  >
+        <input type="text" name="lname" placeholder="Last Name" title="Last Name" required>
       </div>
       <div class="labelhead"><Label>Gender</Label></div>
       <div class="gen">
-        <div class="male"><input type="radio" name="gender" title="Male" value="Male"> Male</div>
+        <div class="male"><input type="radio" name="gender" title="Male" value="Male" required> Male</div>
         <div class="male"><input type="radio" name="gender" title="FeMale" value="Female"  > Female</div>
         <div class="male"><input type="radio" name="gender" title="other" value="Female"  > Other</div>
       </div>
       <div class="labelhead"><Label>Date of Birth</Label></div>
       <div class="f1">
-        <input type="date" name="dob" title="Date of Birth"  >
+        <input type="date" name="dob" title="Date of Birth" required >
       </div>
       <div class="labelhead"><Label>Address</Label></div>
       <div class="f1">
         <textarea placeholder="Type your House No. & House Name" class="address" name="address"  ></textarea>
       </div>
-      <div class="ds">
+      <!-- <div class="ds">
         <div class="dis">
-          <input type="text" name="district" placeholder="District" title="Enter Valid Mobile Number"  >
+          <input type="text" name="district" placeholder="District" title="Enter Valid Mobile Number"  required>
         </div>
         <div class="dis">
-          <input type="text" name="state" placeholder="State" title="Enter Valid Mobile Number"  >
+          <input type="text" name="state" placeholder="State" title="Enter Valid Mobile Number" required >
         </div>
       </div>
       <div class="ds">
         <div class="dis">
-          <select title="Country" name="country" class="country"  >
+          <select title="Country" name="country" class="country"  required>
             <option selected hidden value="">Country</option>
             <option value="in">India</option>
             <option value="usa">USA</option>
@@ -75,29 +55,29 @@ function validateForm() {
           </select>
         </div>
         <div class="dis">
-          <input type="number" name="pin" placeholder="Pincode" title="Enter 6 digit PINCODE"  >
+          <input type="number" name="pin" placeholder="Pincode" title="Enter 6 digit PINCODE"  required>
         </div>
-      </div>
+      </div> -->
       <div class="labelhead"><Label>Contact</Label></div>
       <div class="f1">
-        <input type="email" name="email" placeholder="Email ID" title="Enter Valid E-Mail ID"  >
+        <input type="email" id="email" name="email" placeholder="Email ID" title="Enter Valid E-Mail ID"  required>
       </div>
       <div class="f1">
-        <input type="number" name="mob" placeholder="Mobile Number" title="Enter Valid Mobile Number"  >
+        <input type="number" name="mob" placeholder="Mobile Number" title="Enter Valid Mobile Number" required >
       </div>
       <div class="labelhead"><Label>Choose Your Image</Label></div>
       <div class="f1">
-        <input type="file" name="image" title="Image"  >
+        <input type="file" name="image" title="Image"  required>
       </div>
       <div class="labelhead"><Label>Account Creation</Label></div>
       <div class="f1">
-        <input type="text" name="userid" placeholder="User ID" title="User ID"  >
+        <input type="text" name="userid" placeholder="User ID" title="User ID" required >
       </div>
       <div class="f1">
-        <input type="password" name="pass1" placeholder="Enter Your Password" title="Enter Password"  >
+        <input type="password" name="pass1" placeholder="Enter Your Password" title="Enter Password" required >
       </div>
       <div class="f1">
-        <input type="password" name="pass2" placeholder="Confirm Your Password" title="Re-Enter Password"  >
+        <input type="password" name="pass2" placeholder="Confirm Your Password" title="Re-Enter Password"  required>
       </div>
       <input type="submit" name="sub" class="submit" value="Submit">
     </form>
