@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="js/validation.js"></script> -->
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <div class="mainContainer">
+    <div class="heading">
+      <h3>Form Validation Using Javascript</h3>
+    </div>
+    <form action="#" method="post" id="form" enctype="multipart/form-data" name="form1"  onclick="validate()" autocomplete="on">
+      <div class="labelhead"><Label>User Details</Label></div>
+      <div class="f1">
+        <input type="text" name="name" id="fname" placeholder="First Name" title="First Name" required>
+        <div class="error"></div>
+      </div>
+      <div class="f1">
+        <input type="text" name="lname" id="lname" placeholder="Last Name" title="Last Name" required  oninvalid="this.setCustomValidity('Please Enter Last Name')" oninput="setCustomValidity('')">
+        <div class="error"></div>
+      </div>
+      <div class="labelhead"><Label>Gender</Label><div class="error"></div></div>
+      <div class="gen">
+        <div class="male"><input type="radio" name="gender" id="male" title="Male" value="Male" required><label id="maleg">Male</label> </div>
+        <div class="male"><input type="radio" name="gender" id="female" title="FeMale" value="Female"  > <label id="femaleg">Female</label> </div>
+        <div class="male"><input type="radio" name="gender" id="other" title="other" value="Other"  ><label id="otherg">Other</label> </div>
+      </div>
+      <div class="labelhead"><Label>Date of Birth</Label></div>
+      <div class="f1">
+        <input type="date" name="dob" id="dob" title="Date of Birth" required >
+        <div class="error"></div>
+      </div>
+      <div class="labelhead"><Label>Address</Label></div>
+      <div class="f1">
+        <textarea id="address" placeholder="Type your House No. & House Name" class="address" name="address"  ></textarea>
+        <div class="error"></div>
+      </div>
+      <!-- <div class="ds">
+        <div class="dis">
+          <input type="text" name="district" placeholder="District" title="Enter Valid Mobile Number"  required>
+        </div>
+        <div class="dis">
+          <input type="text" name="state" placeholder="State" title="Enter Valid Mobile Number" required >
+        </div>
+      </div>
+      <div class="ds">
+        <div class="dis">
+          <select title="Country" name="country" class="country"  required>
+            <option selected hidden value="">Country</option>
+            <option value="in">India</option>
+            <option value="usa">USA</option>
+            <option value="can">Canada</option>
+          </select>
+        </div>
+        <div class="dis">
+          <input type="number" name="pin" placeholder="Pincode" title="Enter 6 digit PINCODE"  required>
+        </div>
+      </div> -->
+      <div class="labelhead"><Label>Contact</Label></div>
+      <div class="f1">
+        <input type="email" id="email" name="email" placeholder="Email ID" title="Enter Valid E-Mail ID"  required>
+        <div class="error"></div>
+      </div>
+      <div class="f1">
+        <input type="number" name="mob" id="mob" placeholder="Mobile Number" title="Enter Valid Mobile Number" required >
+        <div class="error"></div>
+      </div>
+      <div class="labelhead"><Label>Choose Your Image</Label></div>
+      <div class="f1">
+        <input type="file" name="image" id="img" title="Image"  required>
+        <div class="error"></div>
+      </div>
+      <div class="labelhead"><Label>Account Creation</Label></div>
+      <!-- <div class="f1">
+        <input type="text" id="userid" name="userid" placeholder="User ID" title="User ID" required >
+        <div class="error"></div>
+      </div> -->
+      <div class="f1">
+        <input type="password" id="pass1" name="pass1" placeholder="Enter Your Password" title="Enter Password" required >
+        <div class="error"></div>
+      </div>
+      <div class="f1">
+        <input type="password" name="pass2" id="pass2" placeholder="Confirm Your Password" title="Re-Enter Password"  required>
+        <div class="error"></div>
+      </div>
+      <input type="submit" name="sub" class="submit" value="Submit">
+    </form>
+  </div>
+  
+  <script src="js/valid.js"></script>
+</body>
+
+</html>
