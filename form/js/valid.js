@@ -14,20 +14,21 @@
     let textonly = /^[a-zA-Z]*$/;
     let phoneno = /^\d{10}$/;
     let password = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    let allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
 
-    form1.addEventListener("submit", (e) => {
+   /* form1.addEventListener("submit", (e) => {
         e.preventDefault();
         validate();
-    });
+    });*/
 
     function validate() {
         //First Names
         if (fname.value.trim() === '' || fname.value.length < 3) {
             displayError(fname, "First Name should contain Minimum 3 Letters");
-            //return
+            //return;
         } else if (!fname.value.match(textonly)) {
             displayError(fname, "*Name should Contain Letters only");
-            //return
+            //return;
         } else {
             displaySuccess(fname, "");
             // return true;
@@ -35,10 +36,10 @@
         //Last name
         if (lname.value.trim() == '' || lname.value.length < 3) {
             displayError(lname, "*Last Name should contain Minimum 3 Letters");
-            //return
+            //return;
         } else if (!lname.value.match(textonly)) {
             displayError(lname, "*Name should Contain Letters only");
-            //return
+            //return;
         } else {
             displaySuccess(lname, "");
         }
@@ -51,72 +52,86 @@
             genderError.innerHTML = "";
         } else {
             genderError.innerHTML = "*Please Choose Your Gender";
-            //return
+            //return;
         }
         //dob
         if (dob.value.trim() == '') {
             displayError(dob, "*Please Select your Date OF Birth");
-            //return
+            //return;
         } else {
             displaySuccess(dob, "");
         }
         //address
-        if (address.value.trim() == '') {
+        if (address.value.trim() == '' || address.value.length < 10) {
             displayError(address, "*Please type your Address");
-            //return
+            //return;
         } else {
             displaySuccess(address, "");
         }
         //Email
         if (!email.value.match(mailformat)) {
             displayError(email, "*Enter Valid Email ID");
-            //return
+            //return;
         } else {
             displaySuccess(email, "");
         }
         //MobileNumber
         if (!mob.value.match(phoneno)) {
             displayError(mob, "*Enter 10 Digit Mobile Number");
-            //return
+            //return;
         } else {
             displaySuccess(mob, "");
         }
-        //Image
-        let valid = true;
-        if (img.files.length != 0) {
-            valid = true;
-            displaySuccess(img, "");
+
+        //image
+        if (!allowedExtensions.exec(img.value)) {
+            displayError(img, "Please upload file having extensions .jpeg/.jpg/.png/.gif only.")
+            img.value = '';
+            // return false;
         } else {
-            valid = false;
-            displayError(img, "*Please select any image file");
-            //return
+            //Image preview
+            if (img.files && img.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    displaySuccess(img, "")
+                };
+                reader.readAsDataURL(img.files[0]);
+            }
         }
+
+
 
         //password
         if (!pass1.value.match(password)) {
             displayError(pass1, "**Should Contain at least one digit, at least one lower case, at least one upper case,at least 8 from the mentioned characters");
-            //return
+            //return;
         } else {
             displaySuccess(pass1, "");
         }
         //confirmpassword
         if (pass1.value === pass2.value) {
             displaySuccess(pass2, "Password Match Successfully");
+            //return;
 
         } else {
             displayError(pass2, "**Password do not Match");
-            //return
+            //return;
         }
 
         if (pass2.value.trim() == "") {
             pass2.nextElementSibling.innerHTML = "";
             pass2.className = "";
+            //return;
         }
 
         function displayError(idname, msg) {
             idname.parentElement.querySelector("div").innerHTML = msg;
             idname.className = "red errorSymbol";
-            return;
+            //return;
+            form1.addEventListener("submit", (e) => {
+                e.preventDefault();
+                validate();
+            });
         }
 
         function displaySuccess(idname, msg) {
