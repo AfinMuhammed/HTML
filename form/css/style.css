@@ -1,28 +1,32 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
 }
-body{
+
+body {
   background-image: url("../assets/g.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: rgb(0, 0, 0, 0.2);
 }
-.mainContainer{
-  width:50%;
+
+.mainContainer {
+  width: 50%;
   margin: 50px auto;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 30px 5px rgb(0,0, 0, 0.6);
+  box-shadow: 0px 0px 30px 5px rgb(0, 0, 0, 0.6);
   padding: 5px;
 }
-h3{
+
+h3 {
   text-align: center;
   color: rgb(0, 9, 133);
 }
-.heading{
+
+.heading {
   background-color: white;
-  margin:20px 0;
+  margin: 20px 0;
 }
 
 input::-webkit-outer-spin-button,
@@ -31,7 +35,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input, textarea{
+input,
+textarea {
   width: 95%;
   padding: 10px;
   border-radius: 5px;
@@ -42,43 +47,53 @@ input, textarea{
   /* color: white; */
   /* cursor: text; */
 }
-#errorgen{
+
+#errorgen {
   margin: 5px 90px;
   padding: 10px;
 }
-.submit{
+
+.submit {
   background-color: rgb(2, 2, 141);
   color: white;
   font-size: 15px;
 }
-.ds{
+
+.ds {
   display: flex;
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
 }
-.dis{
+
+.dis {
   width: 80%;
   margin-right: 15%;
 }
-.f1{
+
+.f1 {
   width: 75%;
   margin: 0 auto;
 }
-.gen{
+
+.gen {
   display: flex;
   justify-content: space-evenly;
   padding: 10px 75px;
 }
-input:focus, textarea:focus{
+
+input:focus,
+textarea:focus {
   outline: none;
   /* background-color: transparent; */
   /* border-bottom: 1px solid blue; */
 }
-input[type="radio"]{
-  width:20%;
+
+input[type="radio"] {
+  width: 20%;
 }
-.labelhead{
+
+.labelhead {
   /* display: block; */
   margin: 5px 30px;
   padding: 5px 50px;
@@ -88,31 +103,37 @@ input[type="radio"]{
   width: 35%;
   border-radius: 10px;
 }
-.male{
+
+.male {
   width: 30%;
 }
+
 .error {
   color: red;
   font-size: 90%;
 }
-.red{
+
+.red {
   border-bottom: 2px solid red;
 }
-.green{
+
+.green {
   border: 2px solid green;
   background-color: transparent;
 }
-.errorSymbol{
+
+.errorSymbol {
   background-image: url('../assets/error.png');
   background-position: 93%;
   background-repeat: no-repeat;
   background-size: 25px;
 }
-.doneSymbol{
+
+.doneSymbol {
   /* background-color: transparent !important; */
   background-image: url('../assets/tick.png') !important;
   background-position: 93%;
   background-repeat: no-repeat;
-  background-size: 25px; 
+  background-size: 25px;
 
 }

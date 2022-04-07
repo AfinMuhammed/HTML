@@ -14,19 +14,16 @@
     let textonly = /^[a-zA-Z]*$/;
     let phoneno = /^\d{10}$/;
     let password = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-    let allowedExtensions = ["jpeg","jpg","png","gif"];
+    let allowedExtensions = ["jpeg", "jpg", "png", "gif"];
 
-    form1.addEventListener("submit", (e) => {
-        e.preventDefault();
-        validate();
-    });
+    
 
     function validate() {
         //First Names
-        if (fname.value.trim() == '' || fname.value.length < 3) {
+        if (fname.value.trim() == '' || fname.value.trim().length < 3) {
             displayError(fname, "First Name should contain Minimum 3 Letters");
             //return;
-        } else if (!fname.value.match(textonly)) {
+        } else if (!fname.value.trim().match(textonly)) {
             displayError(fname, "*Name should Contain Letters only");
             //return;
         } else {
@@ -34,10 +31,10 @@
             // return true;
         }
         //Last name
-        if (lname.value.trim() == '' || lname.value.length < 3) {
+        if (lname.value.trim() == '' || lname.value.trim().length < 3) {
             displayError(lname, "*Last Name should contain Minimum 3 Letters");
             //return;
-        } else if (!lname.value.match(textonly)) {
+        } else if (!lname.value.trim().match(textonly)) {
             displayError(lname, "*Name should Contain Letters only");
             //return;
         } else {
@@ -62,14 +59,14 @@
             displaySuccess(dob, "");
         }
         //address
-        if (address.value.trim() == '' || address.value.length < 10) {
+        if (address.value.trim() == '' || address.value.trim().length < 10) {
             displayError(address, "*Please type your Address");
             //return;
         } else {
             displaySuccess(address, "");
         }
         //Email
-        if (!email.value.match(mailformat)) {
+        if (!email.value.trim().match(mailformat)) {
             displayError(email, "*Enter Valid Email ID");
             //return;
         } else {
@@ -83,48 +80,31 @@
             displaySuccess(mob, "");
         }
 
-        //image
-       /* if (!allowedExtensions.exec(img.value)) {
-            displayError(img, "Please upload file having extensions .jpeg/.jpg/.png/.gif only.");
-            img.value = '';
-            // return false;
-        } else {
-            //Image preview
-            if (img.files && img.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    displaySuccess(img, "")
-                };
-                reader.readAsDataURL(img.files[0]);
-            }
-        }*/
-
+        
         //img
-        if(img.value.trim()==""){
+        if (img.value.trim() == "") {
             displayError(img, "Please choose your Image");
-        }
-        else {
+        } else {
             let posImgExt = img.value.lastIndexOf(".") + 1;
             let imgExt = img.value.substring(posImgExt);
             let result = allowedExtensions.includes(imgExt);
-            if(result==false){
-                displayError(img,"Please upload file having extensions .jpeg/.jpg/.png/.gif only.");
-            }
-            else{
-                displaySuccess(img,"");
+            if (result == false) {
+                displayError(img, "Please upload file having extensions .jpeg/.jpg/.png/.gif only.");
+            } else {
+                displaySuccess(img, "");
             }
         }
 
 
         //password
-        if (!pass1.value.match(password)) {
+        if (!pass1.value.trim().match(password)) {
             displayError(pass1, "**Should Contain at least one digit, at least one lower case, at least one upper case,at least 8 from the mentioned characters");
             //return;
         } else {
             displaySuccess(pass1, "");
         }
         //confirmpassword
-        if (pass1.value === pass2.value) {
+        if (pass1.value.trim() === pass2.value.trim()) {
             displaySuccess(pass2, "Password Match Successfully");
             //return;
 
@@ -143,15 +123,25 @@
             idname.parentElement.querySelector("div").innerHTML = msg;
             idname.className = "red errorSymbol";
             //return;
-           /* form1.addEventListener("submit", (e) => {
-                e.preventDefault();
-                validate();
-            });*/
+            /* form1.addEventListener("submit", (e) => {
+                 e.preventDefault();
+                 validate();
+             });*/
         }
-        
+
         function displaySuccess(idname, msg) {
             idname.className = "green doneSymbol";
             idname.parentElement.querySelector("div").innerHTML = msg;
 
         }
-    } 
+    }
+
+    function invalid() {
+        //alert("please");
+        form1.addEventListener("submit", (e) => {
+            e.preventDefault();
+            validate();
+            
+        });
+        //alert("sorry");
+    }
