@@ -10,20 +10,20 @@
     let error = document.getElementsByClassName('error');
     let pass1 = document.getElementById('pass1');
     let pass2 = document.getElementById('pass2');
-    let mailformat = /^[a-zA-Z0-9àâçéèêëîïôûùüÿñæœ .-]*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let mailformat = /^[a-z0-9àâçéèêëîïôûùüÿñæœ .-]*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let textonly = /^[a-zA-Z]*$/;
     let phoneno = /^\d{10}$/;
     let password = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-    let allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+    let allowedExtensions = ["jpeg","jpg","png","gif"];
 
-   /* form1.addEventListener("submit", (e) => {
+    form1.addEventListener("submit", (e) => {
         e.preventDefault();
         validate();
-    });*/
+    });
 
     function validate() {
         //First Names
-        if (fname.value.trim() === '' || fname.value.length < 3) {
+        if (fname.value.trim() == '' || fname.value.length < 3) {
             displayError(fname, "First Name should contain Minimum 3 Letters");
             //return;
         } else if (!fname.value.match(textonly)) {
@@ -84,8 +84,8 @@
         }
 
         //image
-        if (!allowedExtensions.exec(img.value)) {
-            displayError(img, "Please upload file having extensions .jpeg/.jpg/.png/.gif only.")
+       /* if (!allowedExtensions.exec(img.value)) {
+            displayError(img, "Please upload file having extensions .jpeg/.jpg/.png/.gif only.");
             img.value = '';
             // return false;
         } else {
@@ -97,8 +97,23 @@
                 };
                 reader.readAsDataURL(img.files[0]);
             }
-        }
+        }*/
 
+        //img
+        if(img.value.trim()==""){
+            displayError(img, "Please choose your Image");
+        }
+        else {
+            let posImgExt = img.value.lastIndexOf(".") + 1;
+            let imgExt = img.value.substring(posImgExt);
+            let result = allowedExtensions.includes(imgExt);
+            if(result==false){
+                displayError(img,"Please upload file having extensions .jpeg/.jpg/.png/.gif only.");
+            }
+            else{
+                displaySuccess(img,"");
+            }
+        }
 
 
         //password
@@ -128,15 +143,15 @@
             idname.parentElement.querySelector("div").innerHTML = msg;
             idname.className = "red errorSymbol";
             //return;
-            form1.addEventListener("submit", (e) => {
+           /* form1.addEventListener("submit", (e) => {
                 e.preventDefault();
                 validate();
-            });
+            });*/
         }
-
+        
         function displaySuccess(idname, msg) {
             idname.className = "green doneSymbol";
             idname.parentElement.querySelector("div").innerHTML = msg;
-        }
 
-    }
+        }
+    } 
