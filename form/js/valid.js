@@ -7,7 +7,7 @@
     let mob = document.getElementById('mob');
     let img = document.getElementById('img');
     let genderError = document.getElementById('errorgen');
-    let error = document.getElementsByClassName('error');
+    // let error = document.getElementsByClassName('error');
     let pass1 = document.getElementById('pass1');
     let pass2 = document.getElementById('pass2');
     let mailformat = /^[a-z0-9àâçéèêëîïôûùüÿñæœ .-]*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -16,7 +16,11 @@
     let password = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     let allowedExtensions = ["jpeg", "jpg", "png", "gif"];
 
-    
+    form1.addEventListener("submit", (e) => {
+        e.preventDefault();
+        validate();
+        
+    });
 
     function validate() {
         //First Names
@@ -114,13 +118,20 @@
         }
 
         if (pass2.value.trim() == "") {
-            pass2.nextElementSibling.innerHTML = "";
-            pass2.className = "";
+            // pass2.nextElementSibling.innerHTML = "";
+            // pass2.className = "";
+            displayError(pass2,"Please type your Password");
             //return;
+        }
+        
+        if(pass1.value.trim()!= "" && pass2.value.trim() == ""){
+            displayError(pass2,"Please Re-type your Password");
         }
 
         function displayError(idname, msg) {
-            idname.parentElement.querySelector("div").innerHTML = msg;
+            let error= idname.parentElement.querySelector("div");
+            error.classList.remove("greencolor");
+            error.innerHTML = msg;
             idname.className = "red errorSymbol";
             //return;
             /* form1.addEventListener("submit", (e) => {
@@ -131,7 +142,9 @@
 
         function displaySuccess(idname, msg) {
             idname.className = "green doneSymbol";
-            idname.parentElement.querySelector("div").innerHTML = msg;
+            let error= idname.parentElement.querySelector("div");
+            error.classList.add("greencolor");
+            error.innerHTML = msg;
 
         }
     }
@@ -145,3 +158,4 @@
         });
         //alert("sorry");
     }
+    
