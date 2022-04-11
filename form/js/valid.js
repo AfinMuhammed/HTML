@@ -19,13 +19,13 @@
     form1.addEventListener("submit", (e) => {
         e.preventDefault();
         validate();
-        
+
     });
 
     function validate() {
         //First Names
         if (fname.value.trim() == '' || fname.value.trim().length < 3) {
-            displayError(fname, "First Name should contain Minimum 3 Letters");
+            displayError(fname, "*First Name should contain Minimum 3 Letters");
             //return;
         } else if (!fname.value.trim().match(textonly)) {
             displayError(fname, "*Name should Contain Letters only");
@@ -84,7 +84,7 @@
             displaySuccess(mob, "");
         }
 
-        
+
         //img
         if (img.value.trim() == "") {
             displayError(img, "Please choose your Image");
@@ -109,7 +109,7 @@
         }
         //confirmpassword
         if (pass1.value.trim() === pass2.value.trim()) {
-            displaySuccess(pass2, "Password Match Successfully");
+            displaySuccess(pass2, "<i>Password Match Successfully</i>");
             //return;
 
         } else {
@@ -120,20 +120,18 @@
         if (pass2.value.trim() == "") {
             // pass2.nextElementSibling.innerHTML = "";
             // pass2.className = "";
-            displayError(pass2,"Please type your Password");
+            displayError(pass2, "Please type your Password");
             //return;
-        }
-        else if(!pass1.value.trim().match(password)){
-            displayError(pass2,"Please Type your password Correctly");
-        }
-        else{}
+        } else if (!pass1.value.trim().match(password)) {
+            displayError(pass2, "Please Type your password Correctly");
+        } else {}
 
-        if(pass1.value.trim()!= "" && pass2.value.trim() == ""){
-            displayError(pass2,"Please Re-type your Password");
+        if (pass1.value.trim() != "" && pass2.value.trim() == "") {
+            displayError(pass2, "Please Re-type your Password");
         }
 
         function displayError(idname, msg) {
-            let error= idname.parentElement.querySelector("div");
+            let error = idname.parentElement.querySelector("div");
             error.classList.remove("greencolor");
             error.innerText = msg;
             idname.className = "red errorSymbol";
@@ -146,20 +144,17 @@
 
         function displaySuccess(idname, msg) {
             idname.className = "green doneSymbol";
-            let error= idname.parentElement.querySelector("div");
+            let error = idname.parentElement.querySelector("div");
             error.classList.add("greencolor");
-            error.innerText = msg;
+            error.innerHTML = msg;
 
         }
     }
 
     function invalid() {
-        //alert("please");
         form1.addEventListener("submit", (e) => {
             e.preventDefault();
             validate();
-            
+
         });
-        //alert("sorry");
     }
-    
