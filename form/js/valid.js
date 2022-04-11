@@ -123,7 +123,11 @@
             displayError(pass2,"Please type your Password");
             //return;
         }
-        
+        else if(!pass1.value.trim().match(password)){
+            displayError(pass2,"Please Type your password Correctly");
+        }
+        else{}
+
         if(pass1.value.trim()!= "" && pass2.value.trim() == ""){
             displayError(pass2,"Please Re-type your Password");
         }
@@ -131,7 +135,7 @@
         function displayError(idname, msg) {
             let error= idname.parentElement.querySelector("div");
             error.classList.remove("greencolor");
-            error.innerHTML = msg;
+            error.innerText = msg;
             idname.className = "red errorSymbol";
             //return;
             /* form1.addEventListener("submit", (e) => {
@@ -144,7 +148,7 @@
             idname.className = "green doneSymbol";
             let error= idname.parentElement.querySelector("div");
             error.classList.add("greencolor");
-            error.innerHTML = msg;
+            error.innerText = msg;
 
         }
     }
