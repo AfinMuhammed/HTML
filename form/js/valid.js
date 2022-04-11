@@ -109,7 +109,7 @@
         }
         //confirmpassword
         if (pass1.value.trim() === pass2.value.trim()) {
-            displaySuccess(pass2, "<i>Password Match Successfully</i>");
+            displaySuccess(pass2, "<i>Password Match Successfully</i>  <i class='fa-solid fa-thumbs-up greencolor'></i>");
             //return;
 
         } else {
