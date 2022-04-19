@@ -1,7 +1,9 @@
 $(document).ready(function () {
   $('.tab').click(function () {
-    var tabContent = $(this).data('tab');
+    $('.tab').removeClass("green");
+    var tab= $(this).data('tab');
+    $(this).addClass("green");
     $(".content").removeClass("active");
-    $("." + tabContent).addClass("active");
+    $("." + tab).addClass("active");
   });
 });
