@@ -21,7 +21,7 @@ $(document).ready(function () {
         let password = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
         //First-Name
-        if (fname.val().trim() == '' || fname.val().trim().length < 3) {
+        if (fname.val().trim().length == 0 || fname.val().trim().length < 3) {
             displayError(fname, "This Field is Required");
         } else if (!textonly.test(fname.val().trim())) {
             displayError(fname, "*Name should Contain Letters only");
@@ -30,7 +30,7 @@ $(document).ready(function () {
         }
 
         //Last-Name
-        if (lname.val().trim() == '' || lname.val().trim().length < 3) {
+        if (lname.val().trim().length == 0 || lname.val().trim().length < 3) {
             displayError(lname, "*Last Name should contain Minimum 3 Letters");
         } else if (!textonly.test(lname.val().trim())) {
             displayError(lname, "*Name should Contain Letters only");
@@ -46,14 +46,14 @@ $(document).ready(function () {
         }
 
         //dob
-        if (dob.val().trim() == '') {
+        if (dob.val().trim().length == 0) {
             displayError(dob, "*Please Select your Date OF Birth");
         } else {
             displaySuccess(dob, "");
         }
 
         //address
-        if (address.val().trim() == '' || address.val().trim().length < 10) {
+        if (address.val().trim().length == 0 || address.val().trim().length < 10) {
             displayError(address, "*Please type your Address");
         } else {
             displaySuccess(address, "");
@@ -74,7 +74,7 @@ $(document).ready(function () {
         }
 
         //Image
-        if (img.val().trim() == "") {
+        if (img.val().trim().length == 0) {
             displayError(img, "Please choose your Image");
         } else {
             let posImgExt = img.val().lastIndexOf(".") + 1;
@@ -100,13 +100,13 @@ $(document).ready(function () {
         } else {
             displayError(pass2, "**Password do not Match");
         }
-        if (pass2.val().trim() == "") {
+        if (pass2.val().trim().length == 0) {
             displayError(pass2, "Please type your Password");
         } else if (!password.test(pass1.val().trim())) {
             displayError(pass2, "Please Type your password Correctly");
         } else {
         }
-        if (pass1.val().trim() != "" && pass2.val().trim() == "") {
+        if (pass1.val().trim() != "" && pass2.val().trim().length == 0) {
             displayError(pass2, "Please Re-type your Password");
         }
     });
