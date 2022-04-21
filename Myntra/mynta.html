@@ -7,33 +7,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/icons.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-  <nav class="container-fluid navbar py-0 navbar-expand-lg navbar-light pt-4 shadow ps-4 mb-4 bg-white">
+  <nav class="container-fluid py-0 navbar-expand-lg navbar-light pt-4 shadow ps-4 mb-4 bg-white">
     <div class="row">
-      <div class="col-auto-6 fw-14 fw-bold text-uppercase ms-3 row text-start">
-        <div class="companyLogo col-auto px-3">
-          <img alt="company Logo" src="assets/myntra-logo.png" width="50" />
+      <div class="col-auto-12 fw-14 fw-bold ms-3 row d-flex justify-content-between">
+        <div class="col-auto row text-uppercase text-start">
+          <div class="companyLogo col-auto px-3">
+            <img alt="company Logo" src="assets/myntra-logo.png" width="50" />
+          </div>
+          <button class="navbar-toggler col-auto mb-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="row col-auto collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navlinks col-auto mt-2 pb-4 px-3">Men</div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">Women</div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">kids</div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">Home & Living</div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">beauty</div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">studio <sup class="sup">new</sup></div>
+          </div>
         </div>
-        <button class="navbar-toggler col-auto mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="row col-auto collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navlinks col-auto mt-2 pb-4 px-3">Men</div>
-          <div class="navlinks col-auto mt-2 pb-4 px-3">Women</div>
-          <div class="navlinks col-auto mt-2 pb-4 px-3">kids</div>
-          <div class="navlinks col-auto mt-2 pb-4 px-3">Home & Living</div>
-          <div class="navlinks col-auto mt-2 pb-4 px-3">beauty</div>
-          <div class="navlinks col-auto mt-2 pb-4 px-3">studio <sup class="sup">new</sup></div>
-        </div>
+        <div class="col-md-5 row me-2">
+          <div class="col">
+            <form>
+              <input type="search" placeholder="Search for products, brands and More" class="search ">
+            </form>
 
+          </div>
+          <div class="col-auto">
+            <i class="fa-regular fa-user ms-2"></i>
+            <!-- <ion-icon name="person-outline"></ion-icon> -->
+            <div class="fs-10x">Profile</div>
+          </div>
+          <div class="col-auto">
+            <i class="fa-regular fa-heart ms-2"></i>
+            <div class="fs-10x">Wishlist</div>
+          </div>
+          <div class="col-auto me-3">
+            <i class="fa-solid fa-bag-shopping ms-1"></i>
+            <div class="fs-10x">Bag</div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
+  <!-- Hover Content -->
+  <div class="content">
+    <div class="con col-auto-12 row">
+      <div class="col-auto ms-2">
+        <div class="text-danger fw-bolder fs-13x mb-2">Top Wear</div>
+        <div class=" fs-13x hoversub">T-Shirts</div>
+        <div class=" fs-13x hoversub">Casual Shirts</div>
+        <div class=" fs-13x hoversub">Formal Shirts</div>
+        <div class=" fs-13x hoversub">T-Shirts</div>
+        <div class=" fs-13x hoversub">T-Shirts</div>
+        <div class=" fs-13x hoversub">T-Shirts</div>
+        <div class=" fs-13x hoversub">T-Shirts</div>
+        <div class=" fs-13x hoversub">T-Shirts</div>
+        <div class=" fs-13x hoversub">T-Shirts</div>
+      </div>
+      <div class="col-auto">sssssssssssss</div>
+      <div class="col-auto">sssssssssssss</div>
+      <div class="col-auto">sssssssssssss</div>
+      <div class="col-auto">sssssssssssss</div>
+    </div>
+  </div>
+  <!-- //Hover Content -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
