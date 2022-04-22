@@ -18,8 +18,8 @@
 .ps-1-9{
   padding-left: 1.9rem !important;
 }
-nav{
-  position: fixed;
+.headerNav{
+  /* position: fixed; */
 }
 
 .companyLogo{
@@ -32,11 +32,12 @@ nav{
 .navlinks:hover{
   border-bottom: 3px solid red;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  transition-delay: .15s;
 }
 
 .navlinks:hover .content{
-  display: block;
+  visibility: visible;
 }
 
 .sup{
@@ -69,14 +70,16 @@ nav{
 }
 .content{
   /* display: none; */
+  visibility: hidden;
   position: fixed;
   left: 0px;
-  top: 80px;
+  top: 85px;
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0,0.5);
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0,0.3);
+  pointer-events: none;
+  cursor: auto;
 }
 .con{
   background-color: #fefefe;
@@ -84,8 +87,44 @@ nav{
   padding: 20px;
   border: 1px solid #888;
   width: 83%;
+  border: none;
+  outline: none;
+  z-index: 2;
+  position: fixed;
+  top: 85px;
+  left: 115px;
+  pointer-events: auto;
+}
+.con-studio{
+  width: 45% !important;
+  left: 305px;
 }
 .hoversub{
   margin-top: 0.25rem;
+  cursor: pointer;
+}
+.hoversub:hover{
+  font-weight: bold;
+}
+.studlogo{
+  margin: 0 auto
+}
+.mainSection{
+  position: relative;
+  z-index: 0;
+}
+.sourceLinks a{
+  text-decoration: none;
 }
 
+.sourceLinks a:hover{
+  text-decoration: underline;
+}
+
+div .ratings{
+  cursor:pointer !important;
+}
+
+.ratings:hover{
+  border: 1px solid black !important;
+}

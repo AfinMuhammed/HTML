@@ -8509,6 +8509,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important
 }
 
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
 .fst-italic {
   font-style: italic !important
 }
@@ -8630,6 +8634,26 @@ fieldset:disabled .btn {
 .text-danger {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important
+}
+
+.text-pink {
+  --bs-text-opacity: 1;
+  color: var(--bs-pink) !important
+}
+
+.text-orange {
+  --bs-text-opacity: 1;
+  color: var(--bs-orange) !important
+}
+
+.text-yellow {
+  --bs-text-opacity: 1;
+  color: var(--bs-yellow) !important
+}
+
+.text-green {
+  --bs-text-opacity: 1;
+  color: var(--bs-green) !important
 }
 
 .text-light {

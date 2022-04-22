@@ -4,6 +4,7 @@
 <head>
   <title>Myntra</title>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/icons.js"></script>
@@ -11,10 +12,10 @@
 </head>
 
 <body>
-  <nav class="container-fluid py-0 navbar-expand-lg navbar-light pt-4 shadow ps-4 mb-4 bg-white">
+  <div class="headerNav container-fluid py-0 navbar-expand-lg navbar-light pt-4 shadow ps-4 mb-4 bg-white">
     <div class="row">
-      <div class="col-auto-12 fw-14 fw-bold ms-3 row d-flex justify-content-between">
-        <div class="col-auto row text-uppercase text-start">
+      <div class="container col-auto-12 ms-3 row d-flex justify-content-between">
+        <div class="col-auto row text-start">
           <div class="companyLogo col-auto px-3">
             <img alt="company Logo" src="assets/myntra-logo.png" width="50" />
           </div>
@@ -24,12 +25,612 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="row col-auto collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navlinks col-auto mt-2 pb-4 px-3">Men</div>
-            <div class="navlinks col-auto mt-2 pb-4 px-3">Women</div>
-            <div class="navlinks col-auto mt-2 pb-4 px-3">kids</div>
-            <div class="navlinks col-auto mt-2 pb-4 px-3">Home & Living</div>
-            <div class="navlinks col-auto mt-2 pb-4 px-3">beauty</div>
-            <div class="navlinks col-auto mt-2 pb-4 px-3">studio <sup class="sup">new</sup></div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">
+              <span class=" text-uppercase fw-14 fw-bold">MEN</span>
+              <!-- Hover Content-Men -->
+              <div class="content container-fluid">
+                <div class="con col-auto-12 row">
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Top Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Jackets</div>
+                      <div class=" fs-13x hoversub">Blaszers & Coats</div>
+                      <div class=" fs-13x hoversub">Suits</div>
+                      <div class=" fs-13x hoversub">Rain Jackets</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Indian & Festive Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Bottom Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 nav-tabs">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Inner Wear & Sleeper Wear </div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Plus Size </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Foot Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 ">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Personal Care & Grooming </div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Sunglass & Frames</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Watches</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Sports & Acitve Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Gadgets</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Fashion Accessories</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Bags & Bagpacks</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-danger fw-bolder fs-13x mb-2 hoversub">Luggages & Trolleys</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //Hover Content - Men -->
+            </div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">
+              <span class=" text-uppercase fw-14 fw-bold">women</span>
+              <!-- Hover Content-Women -->
+              <div class="content">
+                <div class="con col-auto-12 row">
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Top Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Jackets</div>
+                      <div class=" fs-13x hoversub">Blaszers & Coats</div>
+                      <div class=" fs-13x hoversub">Suits</div>
+                      <div class=" fs-13x hoversub">Rain Jackets</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Indian & Festive Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Bottom Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 nav-tabs">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Inner Wear & Sleeper Wear </div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Plus Size </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Foot Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 ">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Personal Care & Grooming </div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Sunglass & Frames</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Watches</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Sports & Acitve Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Gadgets</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Fashion Accessories</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Bags & Bagpacks</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-pink fw-bolder fs-13x mb-2 hoversub">Luggages & Trolleys</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //Hover Content - WoMen -->
+            </div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">
+              <span class=" text-uppercase fw-14 fw-bold">kids</span>
+              <!-- Hover Content-Kids -->
+              <div class="content">
+                <div class="con col-auto-12 row">
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Top Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Jackets</div>
+                      <div class=" fs-13x hoversub">Blaszers & Coats</div>
+                      <div class=" fs-13x hoversub">Suits</div>
+                      <div class=" fs-13x hoversub">Rain Jackets</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Indian & Festive Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Bottom Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 nav-tabs">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Inner Wear & Sleeper Wear </div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Plus Size </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Foot Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 ">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Personal Care & Grooming </div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Sunglass & Frames</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Watches</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Sports & Acitve Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Gadgets</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Fashion Accessories</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Bags & Bagpacks</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-orange fw-bolder fs-13x mb-2 hoversub">Luggages & Trolleys</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //Hover Content - Kids -->
+            </div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">
+              <span class=" text-uppercase fw-14 fw-bold">
+                Home & living
+              </span>
+              <!-- Hover Content-Home -->
+              <div class="content">
+                <div class="con col-auto-12 row">
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Top Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Jackets</div>
+                      <div class=" fs-13x hoversub">Blaszers & Coats</div>
+                      <div class=" fs-13x hoversub">Suits</div>
+                      <div class=" fs-13x hoversub">Rain Jackets</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Indian & Festive Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Bottom Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 nav-tabs">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Inner Wear & Sleeper Wear </div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Plus Size </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Foot Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 ">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Personal Care & Grooming </div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Sunglass & Frames</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Watches</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Sports & Acitve Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Gadgets</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Fashion Accessories</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Bags & Bagpacks</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-yellow fw-bolder fs-13x mb-2 hoversub">Luggages & Trolleys</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //Hover Content - Home  -->
+            </div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">
+              <span class=" text-uppercase fw-14 fw-bold">beauty</span>
+              <!-- Hover Content-Beauty -->
+              <div class="content">
+                <div class="con col-auto-12 row">
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Top Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Jackets</div>
+                      <div class=" fs-13x hoversub">Blaszers & Coats</div>
+                      <div class=" fs-13x hoversub">Suits</div>
+                      <div class=" fs-13x hoversub">Rain Jackets</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Indian & Festive Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Bottom Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 nav-tabs">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Inner Wear & Sleeper Wear </div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Plus Size </div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Foot Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2 ">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Personal Care & Grooming </div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Sunglass & Frames</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Watches</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Sports & Acitve Wear</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Gadgets</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                    </div>
+                  </div>
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection nav-tabs pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Fashion Accessories</div>
+                      <div class=" fs-13x hoversub">T-Shirts</div>
+                      <div class=" fs-13x hoversub">Casual Shirts</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                      <div class=" fs-13x hoversub">Formal Shirts</div>
+                      <div class=" fs-13x hoversub">Sweat Shirts</div>
+                      <div class=" fs-13x hoversub">Sweaters</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Bags & Bagpacks</div>
+                    </div>
+                    <div class="conSection pb-3 mt-2">
+                      <div class="text-green fw-bolder fs-13x mb-2 hoversub">Luggages & Trolleys</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //Hover Content - Beauty -->
+            </div>
+            <div class="navlinks col-auto mt-2 pb-4 px-3">
+              <span class=" text-uppercase fw-14 fw-bold">
+                studio <sup class="sup">new</sup>
+              </span>
+              <!-- Hover Content-STudio -->
+              <div class="content ">
+                <div class="con con-studio col-auto row">
+                  <div class="col-auto ms-2 pe-5">
+                    <div class="conSection pb-3 mt-2">
+                      <div class="studlogo img-fluid p-2">
+                        <img alt="studio-logo" class="align-items-center" src="assets/studio-logo-new.png">
+                      </div>
+                      <div class="text-center">
+                        <span>
+                          Your daily inspiration for everything fashion
+                        </span>
+                      </div>
+                      <div class="p-3">
+                        <img alt="logo" src="assets/sudio-nav-banner.png" width="514"><br>
+                      </div>
+                      <div class="container-fluid text-uppercase text-center">
+                        <span class="border border-black p-2"> explore studio</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //Hover Content - studio -->
+            </div>
           </div>
         </div>
         <div class="col-md-5 row me-2">
@@ -55,29 +656,71 @@
         </div>
       </div>
     </div>
-  </nav>
-  <!-- Hover Content -->
-  <div class="content">
-    <div class="con col-auto-12 row">
-      <div class="col-auto ms-2">
-        <div class="text-danger fw-bolder fs-13x mb-2">Top Wear</div>
-        <div class=" fs-13x hoversub">T-Shirts</div>
-        <div class=" fs-13x hoversub">Casual Shirts</div>
-        <div class=" fs-13x hoversub">Formal Shirts</div>
-        <div class=" fs-13x hoversub">T-Shirts</div>
-        <div class=" fs-13x hoversub">T-Shirts</div>
-        <div class=" fs-13x hoversub">T-Shirts</div>
-        <div class=" fs-13x hoversub">T-Shirts</div>
-        <div class=" fs-13x hoversub">T-Shirts</div>
-        <div class=" fs-13x hoversub">T-Shirts</div>
-      </div>
-      <div class="col-auto">sssssssssssss</div>
-      <div class="col-auto">sssssssssssss</div>
-      <div class="col-auto">sssssssssssss</div>
-      <div class="col-auto">sssssssssssss</div>
-    </div>
   </div>
-  <!-- //Hover Content -->
+  <!-- Section Main-->
+  <div class="container-fluid mainSection">
+
+    <!-- Source Links -->
+    <div class="container-fluid fs-13x sourceLinks text-capitalize mb-2">
+      <span class="">
+        <a class="text-dark" href=""> Home</a> /
+        <a class="text-dark" href="">Clothing</a> /
+        <a class="text-dark" href="">Men Clothing</a> /
+        <a class="text-dark" href="">Tshirts</a> /
+        <a class="text-dark fw-bold" href="">HRX by Hrithik Roshan Tshirts</a> >
+        <a class="text-dark fw-bold" href="">More by HRX by hrithik roshan</a>
+      </span>
+    </div>
+    <!-- //Source Links -->
+
+    <!-- Product Details-->
+    <div class="container-fluid p-3">
+      <div class="row">
+        <div class="col-7">
+          <div class="row row-cols-2 mb-2">
+            <img class="img-fluid px-0" src="assets/images/fig1.jpg.png">
+            <img alt="fig2" class="img-fluid" src="assets/images/fig2.jpg">
+          </div>
+          <div class="row row-cols-2 mb-2">
+            <img alt="fig1" class="img-fluid px-0" src="assets/images/fig3.jpg">
+            <img alt="fig2" class="img-fluid" src="assets/images/fig4.jpg">
+          </div>
+          <div class="row row-cols-2 mb-2">
+            <img alt="fig1" class="img-fluid px-0" src="assets/images/fig5.jpg">
+            <img alt="fig2" class="img-fluid" src="assets/images/fig6.jpg">
+          </div>
+          <div class="row row-cols-2 mb-2">
+            <img alt="fig1" class="img-fluid px-0" src="assets/images/fig7.jpg">
+          </div>
+        </div>
+        <div class="container-fluid col-5 px-2 pt-1">
+          <div class="container border-bottom pb-3">
+            <div class="h4 fw-bold mb-1">HRX by Hrithik Roshan</div>
+            <div class="h5 fw-lighter mb-3">Men Teal Blue Printed Pure Cotton T-shirt</div>
+            <div class=" ratings border col-4 p-0">
+              <div class="m-1">
+                <span class="fw-bold">4.3</span>
+                <i class="fa-solid fa-star text-green fs-7 pt-0"></i>
+                <span class="fs-6 text-secondary">
+                  | 37.2k Ratings
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <span class="h4 me-2">Rs. 384</span> 
+            <del class="h5 text-dark opacity-75 me-2">Rs. 699</del>
+            <span class="h5 text-orange">(45% OFF)</span>
+            <div class="text-green fw-bold fs-7 mt-1">inclusive of all taxes</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- //Product Details-->
+  </div>
+  <!-- Section Main-->
 
 
   <script src="js/bootstrap.bundle.min.js"></script>
