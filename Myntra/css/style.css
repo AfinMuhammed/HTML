@@ -128,3 +128,20 @@ div .ratings{
 .ratings:hover{
   border: 1px solid black !important;
 }
+
+.productDetails img{
+  cursor: zoom-in;
+  transition: transform .2s;
+}
+
+.productDetails img:hover{
+  transform: scale(1.02); 
+}
+
+.sizeIcons span{
+  cursor: pointer;
+}
+
+.sizeIcons span:hover{
+  border: 1px solid rgb(255, 0, 0) !important;
+}
