@@ -676,7 +676,7 @@
     <!-- Product Details-->
     <div class="container-fluid p-3">
       <div class="row">
-        <div class="col-7 productDetails">
+        <div class="col-7 productImages">
           <div class="row row-cols-2 mb-2 ">
             <img class="img-fluid px-0" src="assets/images/fig1.jpg.png">
             <img alt="fig2" class="img-fluid" src="assets/images/fig2.jpg">
@@ -694,7 +694,7 @@
           </div>
         </div>
         <div class="container-fluid col-5 px-2 pt-1">
-          <div class="container border-bottom pb-3">
+          <div class="container">
             <div class="h4 fw-bold mb-1">HRX by Hrithik Roshan</div>
             <div class="h5 fw-lighter mb-3">Men Teal Blue Printed Pure Cotton T-shirt</div>
             <div class=" ratings border col-4 p-0">
@@ -707,8 +707,8 @@
               </div>
             </div>
           </div>
-
-          <div class="container">
+          <hr class="ms-4">
+          <div class="container-fluid mb-2">
             <span class="h4 me-2">Rs. 384</span>
             <del class="h5 text-dark opacity-75 me-2">Rs. 699</del>
             <span class="h5 text-orange">(45% OFF)</span>
@@ -717,16 +717,544 @@
               <span class="h6 fw-bold me-4">SELECT SIZE</span>
               <span class="fs-13x text-pink fw-bold">SIZE CHART ></span>
             </div>
-            <div class="mt-5 sizeIcons mb-4 ">
-              <span class="border rounded-pill px-4 py-3 me-2">S</span>
-              <span class="border rounded-pill px-4 py-3 me-2">M</span>
-              <span class="border rounded-pill px-4 py-3 me-2">L</span>
-              <span class="border rounded-pill px-4 py-3 me-2">XL</span>
-              <span class="border rounded-pill px-4 py-3 me-2">XLL</span>
+            <div class="mt-3 container-md-auto sizeIcons ">
+              <span class="border rounded-pill px-3 py-2 me-2 mb-3">S</span>
+              <span class="border rounded-pill px-3 py-2 me-2 mb-3">M</span>
+              <span class="border rounded-pill px-3 py-2 me-2 mb-3">L</span>
+              <span class="border rounded-pill px-3 py-2 me-2 mb-3">XL</span>
+              <span class="border rounded-pill px-3 py-2 me-2 mb-3">XLL</span>
             </div>
             <div class="mt-5">
-              <button type="button" class="btn btn-primary px-4">Primary</button>
+              <button type="button" class="btn btn-danger addtoBag">
+                <i class="fa-solid fa-bag-shopping ms-1"></i>
+                <span class="fw-bold ms-2"> ADD TO BAG</span>
+              </button>
+              <button type="button" class="btn btn-light ms-2 wishlistButton border">
+                <i class="fa-regular fa-heart ms-2"></i>
+                <span class="fw-bold ms-2"> WISHLIST</span>
+              </button>
             </div>
+            <div class="deliveryOptions mt-4">
+              <div class="deliveryHead fw-bolder mb-3">
+                <span class="me-2">
+                  DELIVERY OPTIONS
+                </span>
+                <i class="fa-solid fa-truck"></i>
+              </div>
+              <div class="pincode col-7">
+                <form class="input-group">
+                  <input type="text" pattern="[0-9]{6}" class="form-control border-end-0"
+                    placeholder="Enter your Pincode">
+                  <div class="input-group-append" id="basic-addon2">
+                    <span class="input-group-text bg-white border-start-0">
+                      <span class="opacity-50">
+                        CHECK
+                      </span>
+                    </span>
+                  </div>
+                </form>
+              </div>
+              <div class="mt-1">
+                <span class="fs-7">Please enter PIN code to check delivery time & Pay on Delivery Availability</span>
+              </div>
+              <div class="mt-3">
+                <div class="mt-1">
+                  100% Original Products
+                </div>
+                <div class="mt-1">
+                  Pay on delivery might be available
+                </div>
+                <div class="mt-1">
+                  Easy 30 days returns and exchanges
+                </div>
+                <div class="mt-1">
+                  Try & Buy might be available
+                </div>
+              </div>
+            </div>
+            <div class="bestOffers mt-4 pt-3">
+              <div class="bestofferHead fw-bolder mb-3 ">
+                <span class="me-2">
+                  BEST OFFERS
+                </span>
+                <i class="fa-solid fa-tag"></i>
+              </div>
+              <div class="">
+                <span class="fw-bold">
+                  Best Price: <span class="text-orange">Rs. 235</span>
+                </span>
+                <ul class="fw-light mb-0">
+                  <li>
+                    Coupon Discount: Rs. 79 off (check cart for final savings)
+                  </li>
+                  <li>
+                    Applicable on: Orders above Rs. 799 (only on first purchase)
+                  </li>
+                  <li>
+                    Coupon code: <span class="fw-bold">HELLO200</span>
+                  </li>
+                </ul>
+                <span class="text-danger fw-bold fs-7">
+                  View Eligible Products
+                </span>
+              </div>
+              <div class="mt-3">
+                <span class="fw-bold">
+                  EMI option available
+                </span>
+                <ul class="fw-light mb-0">
+                  <li>
+                    EMI starting from Rs.15/month
+                  </li>
+                </ul>
+                <span class="text-danger fw-bold fs-7">
+                  View Plan
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr class="ms-4 my-4">
+
+          <div class="container-fluid mb-2">
+            <div class="productDetails">
+              <div class="productdetailsHead fw-bolder mb-3">
+                <span class="me-2">
+                  PRODUCT DETAILS
+                </span>
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <div class="mb-3">
+                <span class="">Keep this hip this season with the HRX Men's Athleisure T-shirt.
+                  This versatile T-shirt can be styled any way you like for the ultimate gym-to-street look.
+                </span>
+              </div>
+              <div class="productdetailsFeatures mt-4 pt-2 fw-bolder">
+                <span class="fs-6 me-2">
+                  Features
+                </span>
+                <div class="fw-normal">
+                  Athleisure T-shirt can be paired with tracks, khakis or jeans<br>
+                  Style: Round Neck<br>
+                  Sleeve: Short Sleeves<br>
+                  Colour: Yellow<br>
+                  Print: Typography<br>
+                  Fit: Regular
+                </div>
+              </div>
+              <div class="productdetailssize pt-2 fw-bolder">
+                <span class="fs-6 me-2">
+                  Size & Fit
+                </span>
+                <div class="fw-normal">
+                  The model height 6' is wearing a size M
+                </div>
+              </div>
+              <div class="productdetailsmaterial pt-2 fw-bolder">
+                <span class="fs-6 me-2">
+                  Material & Care
+                </span>
+                <div class="fw-normal">
+                  100% cotton<br>
+                  Machine-wash
+                </div>
+              </div>
+              <div class="productdetailsSpecification pt-2 fw-bolder pb-3 border-bottom">
+                <span class="fs-6 mb-2 me-2">
+                  Specification
+                </span>
+                <div class="fw-normal row row-cols-2 mt-2">
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-0">
+                  </div>
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-1">
+                  </div>
+                </div>
+                <div class="fw-normal row row-cols-2">
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-1">
+                  </div>
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-1">
+                  </div>
+                </div>
+                <div class="fw-normal row row-cols-2">
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-1">
+                  </div>
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-1">
+                  </div>
+                </div>
+                <div class="fw-normal row row-cols-2">
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-1">
+                  </div>
+                  <div class="text-capitalize">
+                    <span class="fs-7 opacity-75">
+                      fit
+                    </span><br>
+                    <span class="mb-1">
+                      Regular Fit
+                    </span>
+                    <hr class="me-4 mb-1">
+                  </div>
+                </div>
+                <div class="pointer" data-bs-toggle="collapse" data-bs-target="#demo">
+                  <span class="text-danger fs-6">
+                    See More
+                  </span>
+                </div>
+                <div class="collapse" id="demo">
+                  <div class="fw-normal row row-cols-2">
+                    <div class="text-capitalize">
+                      <span class="fs-7 opacity-75">
+                        fit
+                      </span><br>
+                      <span class="mb-1">
+                        Regular Fit
+                      </span>
+                      <hr class="me-4 mb-1">
+                    </div>
+                    <div class="text-capitalize">
+                      <span class="fs-7 opacity-75">
+                        fit
+                      </span><br>
+                      <span class="mb-1">
+                        Regular Fit
+                      </span>
+                      <hr class="me-4 mb-1">
+                    </div>
+                  </div>
+                  <div class="fw-normal row row-cols-2">
+                    <div class="text-capitalize">
+                      <span class="fs-7 opacity-75">
+                        fit
+                      </span><br>
+                      <span class="mb-1">
+                        Regular Fit
+                      </span>
+                      <hr class="me-4 mb-1">
+                    </div>
+                    <div class="text-capitalize">
+                      <span class="fs-7 opacity-75">
+                        fit
+                      </span><br>
+                      <span class="mb-1">
+                        Regular Fit
+                      </span>
+                      <hr class="me-4 mb-1">
+                    </div>
+                  </div>
+                  <div class="fw-normal row row-cols-2">
+                    <div class="text-capitalize">
+                      <span class="fs-7 opacity-75">
+                        fit
+                      </span><br>
+                      <span class="mb-1">
+                        Regular Fit
+                      </span>
+                      <hr class="me-4 mb-1">
+                    </div>
+                    <div class="text-capitalize">
+                      <span class="fs-7 opacity-75">
+                        fit
+                      </span><br>
+                      <span class="mb-1">
+                        Regular Fit
+                      </span>
+                      <hr class="me-4 mb-1">
+                    </div>
+                  </div>
+                  <div class="productdetailsComplete pt-2 fw-bolder">
+                    <span class="fs-6">
+                      Complete The Look
+                    </span>
+                    <div class="fw-normal">
+                      Keep it hip and casual this season with this high-quality HRX by Hrithik Roshan tee.
+                      This yellow piece is incredibly versatile and can be matched with dark or light denim
+                      for an evening out with the guys.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid productratings mb-3">
+            <div class="productratingsHead fw-bolder mb-2">
+              <span class="me-2">
+                RATINGS
+              </span>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="row pt-1 col-12-auto">
+              <div class="row col-4 border-end pb-2">
+                <div class="col-6">
+                  <span class="fs-55">4.3</span>
+                </div>
+                <div class="col-3 mt-4 pt-3 ms-2">
+                  <i class="fa-solid fa-star text-success"></i>
+                </div>
+                <div class="fs-7">
+                  <span>45.2k Verified Buyers</span>
+                </div>
+              </div>
+              <div class="col-8 row">
+                <div class="col-2"></div>
+                <div class="col-10 opacity-50">
+                  <div class="row">
+                    <div class="col-auto">
+                      <Span class="fs-13x">5</Span>
+                      <i class="fa-solid fa-star fs-8x"></i>
+                    </div>
+                    <div class=" progress col-6 row productratingProgress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="col-auto fs-13x mt-1 ms-1">27411</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-auto">
+                      <Span class="fs-13x">5</Span>
+                      <i class="fa-solid fa-star fs-8x"></i>
+                    </div>
+                    <div class=" progress col-6 row productratingProgress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="col-auto fs-13x mt-1 ms-1">27411</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-auto">
+                      <Span class="fs-13x">5</Span>
+                      <i class="fa-solid fa-star fs-8x"></i>
+                    </div>
+                    <div class=" progress col-6 row productratingProgress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="col-auto fs-13x mt-1 ms-1">27411</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-auto">
+                      <Span class="fs-13x">5</Span>
+                      <i class="fa-solid fa-star fs-8x"></i>
+                    </div>
+                    <div class=" progress col-6 row productratingProgress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="col-auto fs-13x mt-1 ms-1">27411</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-auto">
+                      <Span class="fs-13x">5</Span>
+                      <i class="fa-solid fa-star fs-8x"></i>
+                    </div>
+                    <div class=" progress col-6 row productratingProgress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="col-auto fs-13x mt-1 ms-1">27411</div>
+                  </div>
+                </div>
+              </div>
+              <div class="customersaidsHead fw-bolder my-3">
+                <span class="me-2">
+                  WHAT CUSTOMERS SAID
+                </span>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="row">
+                <span class="opacity-75 fw-14">
+                  Fit
+                </span>
+                <div class=" progress ms-3 col-5 productratingProgress customersaidsprogress1">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="col-6">
+                  <span class="fw-bold fs-7">
+                    As Expected (77%)
+                  </span>
+                </div>
+              </div>
+              <div class="row">
+                <span class="opacity-75 fw-14">
+                  Length
+                </span>
+                <div class=" progress ms-3 col-5 productratingProgress customersaidsprogress2">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="col-6">
+                  <span class="fw-bold fs-7">
+                    As Expected (83%)
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="pointer">
+              <span class="text-danger fw-bold fs-7">
+                View Details
+              </span>
+            </div>
+          </div>
+          <hr class="mx-4 mb-3">
+          <div class="container-fluid consumerFotos">
+            <div class="consumerfotosHead fw-bolder mb-2">
+              <span class="me-2">
+                Consumer Photos(1589)
+              </span>
+            </div>
+            <div class="row col-8 d-flex justify-content-between mb-4">
+              <div class="col-2">
+                <img class="" alt="fig1" src="assets/images/cp1.jpg" width="75">
+              </div>
+              <div class="col-2">
+                <img class="" alt="fig1" src="assets/images/cp2.jpg" width="75">
+              </div>
+              <div class="col-2">
+                <img class="" alt="fig1" src="assets/images/cp3.jpg" width="75">
+              </div>
+              <div class="col-2">
+                <img class="" alt="fig1" src="assets/images/cp2.jpg" width="75">
+              </div>
+            </div>
+            <div class="customerReviewsHead fw-bolder mb-2">
+              <span class="me-2">
+                Customer Reviews (8746)
+              </span>
+            </div>
+            <div class="reviews row">
+              <div class="Customerreviews col-auto">
+                <span class="bg-success text-white px-1">
+                  <span class="fs-13x ">5</span>
+                  <i class="fa-solid fa-star fs-7"></i>
+                </span>
+              </div>
+              <div class="col-10">
+                <span class="fs-7 ms-0 pb-3">
+                  Though it's a men t-shirt. Still I gave it a try and the result was amazing.
+                </span><br>
+                <img alt="name" class="mt-1" width="75" src="assets/images/cp1.jpg">
+                <img alt="name" class="mt-1" width="75" src="assets/images/cp1.jpg">
+                <div class="d-flex justify-content-between mt-3">
+                  <div class="opacity-75">
+                    <span class="fs-13x">
+                      Sayani Bose24 | Dec 2020
+                    </span>
+                  </div>
+                  <div class="opacity-75">
+                    <i class="fa-regular fa-thumbs-up me-2"></i>
+                    <span class="me-2 fs-13x">1209</span>
+                    <i class="fa-regular fa-thumbs-down me-2"></i>
+                    <span class="me-2 fs-13x">171</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="reviews row">
+              <div class="Customerreviews col-auto">
+                <span class="bg-success text-white px-1">
+                  <span class="fs-13x ">5</span>
+                  <i class="fa-solid fa-star fs-7"></i>
+                </span>
+              </div>
+              <div class="col-10">
+                <span class="fs-7 ms-0 pb-3">
+                  Though it's a men t-shirt. Still I gave it a try and the result was amazing.
+                </span><br>
+                <img alt="name" class="mt-1" width="75" src="assets/images/cp1.jpg">
+                <img alt="name" class="mt-1" width="75" src="assets/images/cp1.jpg">
+                <div class="d-flex justify-content-between mt-3">
+                  <div class="opacity-75">
+                    <span class="fs-13x">
+                      Sayani Bose24 | Dec 2020
+                    </span>
+                  </div>
+                  <div class="opacity-75">
+                    <i class="fa-regular fa-thumbs-up me-2"></i>
+                    <span class="me-2 fs-13x">1209</span>
+                    <i class="fa-regular fa-thumbs-down me-2"></i>
+                    <span class="me-2 fs-13x">171</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="reviews row">
+              <div class="Customerreviews col-auto">
+                <span class="bg-success text-white px-1">
+                  <span class="fs-13x ">5</span>
+                  <i class="fa-solid fa-star fs-7"></i>
+                </span>
+              </div>
+              <div class="col-10 text-start ms-0">
+                <span class="fs-7 ms-0 pb-3">
+                 Quality is good but it's look like night wear 
+                  ..also according to L size it's length is short but overall area is long like sleeves 
+                  .. waist fitting is also loose..chest fitting is good 
+                  ...if your body is fit then this t-shirt is not for you...
+                  if you are fat & small go for it.. 
+                  I personally suggest Hrx is good only for shoes but if you talk about clothes they need to improve .. 
+                  i'm truely not satisfied
+                </span><br>
+                <img alt="name" class="mt-1" width="75" src="assets/images/cp1.jpg">
+                <img alt="name" class="mt-1" width="75" src="assets/images/cp1.jpg">
+                <div class="d-flex justify-content-between mt-3">
+                  <div class="opacity-75">
+                    <span class="fs-13x">
+                      Sayani Bose24 | Dec 2020
+                    </span>
+                  </div>
+                  <div class="opacity-75">
+                    <i class="fa-regular fa-thumbs-up me-2"></i>
+                    <span class="me-2 fs-13x">1209</span>
+                    <i class="fa-regular fa-thumbs-down me-2"></i>
+                    <span class="me-2 fs-13x">171</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
           </div>
         </div>
       </div>
@@ -736,7 +1264,7 @@
   </div>
   <!-- Section Main-->
 
-
+  <script src="js/jq.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
