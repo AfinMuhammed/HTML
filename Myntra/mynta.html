@@ -13,8 +13,8 @@
 
 <body>
   <div class="headerNav container-fluid py-0 navbar-expand-lg navbar-light pt-4 shadow ps-4 mb-4 bg-white">
-    <div class="row">
-      <div class="container col-auto-12 ms-3 row d-flex justify-content-between">
+    <div class="row ps-4">
+      <div class="container d-flex justify-content-between">
         <div class="col-auto row text-start">
           <div class="companyLogo col-auto px-3">
             <img alt="company Logo" src="assets/myntra-logo.png" width="50" />
@@ -633,7 +633,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 row me-2">
+        <div class="col-lg-5 row">
           <div class="col">
             <form>
               <input type="search" placeholder="Search for products, brands and More" class="search ">
@@ -676,10 +676,10 @@
     <!-- Product Details-->
     <div class="container-fluid p-3">
       <div class="row">
-        <div class="col-7 productImages">
+        <div class="container-fluid col-lg-7  productImages">
           <div class="row row-cols-2 mb-2 ">
-            <img class="img-fluid px-0" src="assets/images/fig1.jpg.png">
-            <img alt="fig2" class="img-fluid" src="assets/images/fig2.jpg">
+            <img class=" px-0" src="assets/images/fig1.jpg.png">
+            <img alt="fig2" class="" src="assets/images/fig2.jpg">
           </div>
           <div class="row row-cols-2 mb-2">
             <img alt="fig1" class="img-fluid px-0" src="assets/images/fig3.jpg">
@@ -693,19 +693,21 @@
             <img alt="fig1" class="img-fluid px-0" src="assets/images/fig7.jpg">
           </div>
         </div>
-        <div class="container-fluid col-5 px-2 pt-1">
-          <div class="container">
+        <div class="container-fluid col-lg-5 col-sm-auto px-2 pt-1">
+          <div class="container-fluid">
             <div class="h4 fw-bold mb-1">HRX by Hrithik Roshan</div>
             <div class="h5 fw-lighter mb-3">Men Teal Blue Printed Pure Cotton T-shirt</div>
-            <div class=" ratings border col-4 p-0">
-              <div class="m-1">
-                <span class="fw-bold">4.3</span>
-                <i class="fa-solid fa-star text-green fs-7 pt-0"></i>
-                <span class="fs-6 text-secondary">
-                  | 37.2k Ratings
-                </span>
+            <a href="#ratings" class="anchor link-dark">
+              <div class=" ratings border col-4 p-0">
+                <div class="m-1">
+                  <span class="fw-bold">4.3</span>
+                  <i class="fa-solid fa-star text-green fs-7 pt-0"></i>
+                  <span class="fs-6 text-secondary">
+                    | 37.2k Ratings
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <hr class="ms-4">
           <div class="container-fluid mb-2">
@@ -1023,7 +1025,7 @@
             </div>
           </div>
 
-          <div class="container-fluid productratings mb-3">
+          <div id="ratings" class="container-fluid productratings mb-3">
             <div class="productratingsHead fw-bolder mb-2">
               <span class="me-2">
                 RATINGS
@@ -1229,12 +1231,12 @@
               </div>
               <div class="col-10 text-start ms-0">
                 <span class="fs-7 ms-0 pb-3">
-                 Quality is good but it's look like night wear 
-                  ..also according to L size it's length is short but overall area is long like sleeves 
-                  .. waist fitting is also loose..chest fitting is good 
+                  Quality is good but it's look like night wear
+                  ..also according to L size it's length is short but overall area is long like sleeves
+                  .. waist fitting is also loose..chest fitting is good
                   ...if your body is fit then this t-shirt is not for you...
-                  if you are fat & small go for it.. 
-                  I personally suggest Hrx is good only for shoes but if you talk about clothes they need to improve .. 
+                  if you are fat & small go for it..
+                  I personally suggest Hrx is good only for shoes but if you talk about clothes they need to improve ..
                   i'm truely not satisfied
                 </span><br>
                 <img alt="name" class="mt-1" width="75" src="assets/images/cp1.jpg">
@@ -1255,17 +1257,947 @@
               </div>
             </div>
             <hr>
+            <div class="container-fluid viewallReviews ps-0">
+              <div class="text-pink fw-bold fs-13x pointer">
+                <Span>View all 8746 reviews</Span>
+              </div>
+              <div class="py-2">
+                Product Code: <span class="fw-bold">1700944</span>
+              </div>
+              <div class="py-1">
+                Seller: <span class="fw-bold text-pink pointer">Omnitech Retail</span>
+              </div>
+              <div class="py-1 fs-13x">
+                <span class="fw-bold pointer text-capitalize">view supplier Information</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
     <!-- //Product Details-->
-  </div>
-  <!-- Section Main-->
 
-  <script src="js/jq.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Similar Products-->
+    <div class="container-fluid similarProducts pb-3">
+      <div class="similarProductsHead ms-4">
+        <span class="fw-bold">
+          SIMILAR PRODUCTS
+        </span>
+      </div>
+      <div class="similarProductsMain">
+        <div class="container-fluid d-flex justify-content-between p-0 mt-3 mb-5">
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-between p-0 mt-3 mb-5">
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-between p-0 mt-3 mb-5">
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0">
+              <img src="assets/images/sp1.jpg" class="img-fluid" alt="similarProducts">
+              <div class="bottom-left imageDiv">
+                <span class="fs-7">
+                  5
+                  <i class="fa-solid fa-star fs-10x text-success"></i>
+                </span>
+              </div>
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                DILLINGER
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="">
+                Colorblocked Navy Blue T-shirt
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.476
+              </span>
+              <del class="opacity-50 ">
+                Rs. 899
+              </del>
+              <span class="text-orange">
+                (47% OFF)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //SImilar Products-->
+    <!-- Middle Part-->
+    <div class="container-fluid text-center py-2">
+      <span class="p-3 pointer middlepartcontent text-pink border rounded-pill fs-13x fw-bold me-3">
+        MORE TSHIRTS BY HRX BY HRITHIK ROSHAN >
+      </span>
+      <span class="p-3 pointer middlepartcontent text-pink border rounded-pill fs-13x fw-bold me-3">
+        MORE YELLOW TSHIRTS >
+      </span>
+      <span class="p-3 pointer middlepartcontent text-pink border rounded-pill fs-13x fw-bold me-3">
+        MORE TSHIRTS >
+      </span>
+    </div>
+    <!-- //Middle Part -->
+    <!--Customers Liked-->
+    <div class="container-fluid similarProducts my-5">
+      <div class="similarProductsHead ms-4">
+        <span class="fw-bold">
+          CUSTOMERS ALSO LIKED
+        </span>
+      </div>
+      <div class="similarProductsMain">
+        <div class="container-fluid d-flex justify-content-between p-0 mt-3 mb-5">
+          <div title="Calvados Men Premium Belt & Wallet Gift" class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-between p-0 mt-3 mb-5">
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-between p-0 mt-3 mb-5">
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+          <div class="similarproductdiv border mx-4 pointer pb-2">
+            <div class="container similarProductsContent p-0 mb-0 border-bottom">
+              <img src="assets/images/cal.jpg" class="img-fluid" alt="similarProducts">
+            </div>
+            <div class="container-fluid mt-2">
+              <span class="fw-bold">
+                CALVADOS
+              </span>
+            </div>
+            <div class="fs-13x ms-2 ps-1">
+              <span class="opacity-50">
+                Men Premium Belt & Wallet Gift..
+              </span>
+            </div>
+            <div class="fs-13x fw-bold ms-2 ps-1 my-1">
+              <span class="">
+                Rs.782
+              </span>
+              <del class="opacity-50 ">
+                Rs. 2899
+              </del>
+              <span class="text-orange">
+                (73% OFF)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--//Customers Liked-->
+    </div>
+    <!-- Section Main-->
+
+    <script src="js/jq.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

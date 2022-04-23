@@ -6,7 +6,7 @@
 }
 
 body{
-  overflow-x:hidden;
+  /* overflow-x:visible ; */
 }
 
 .fs-55{
@@ -30,7 +30,8 @@ body{
   padding-left: 1.9rem !important;
 }
 .headerNav{
-  /* position: fixed; */
+  position: fixed;
+  z-index: 3;
 }
 
 .companyLogo{
@@ -102,7 +103,7 @@ body{
   outline: none;
   z-index: 2;
   position: fixed;
-  top: 85px;
+  top: 83.3px;
   left: 115px;
   pointer-events: auto;
 }
@@ -122,6 +123,7 @@ body{
 }
 .mainSection{
   position: relative;
+  top:100px;
   z-index: 0;
 }
 .sourceLinks a{
@@ -208,4 +210,25 @@ div .ratings{
 .consumerFotos .img-fluid{
   width: 150px !important;
 }
+.similarProductsContent{
+  position: relative;
+}
+.imageDiv{
+  position: absolute;
+  margin-left: 5px;
+  /* z-index: 2; */
+  bottom: 8px;
+  background-color: white;
+  width: fit-content;
+  padding: 1px 8px;
+}
 
+.similarproductdiv:hover{
+  box-shadow: 0 2px 16px 4px rgb(40 44 63 / 15%);;
+}
+.anchor{
+  text-decoration: none;
+}
+.middlepartcontent:hover{
+  border: 1px solid #ff3f6c !important;
+}
