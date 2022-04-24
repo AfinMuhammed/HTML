@@ -232,3 +232,9 @@ div .ratings{
 .middlepartcontent:hover{
   border: 1px solid #ff3f6c !important;
 }
+.footer{
+  background-color: #d6d6d6;
+  position: relative;
+  top:80px;
+  z-index: 0;
+}
