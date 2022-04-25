@@ -121,6 +121,9 @@ body{
 .studlogo{
   margin: 0 auto
 }
+.studlogo img{
+  margin-left: 180px;
+}
 .mainSection{
   position: relative;
   top:100px;
@@ -255,4 +258,8 @@ div .ratings{
 
 .start a{
   text-decoration: none;
+}
+
+.footerImageLinks img{
+  cursor: pointer;
 }
