@@ -19,16 +19,38 @@
           <div class="companyLogo col-auto px-3">
             <img alt="company Logo" src="assets/myntra-logo.png" width="50" />
           </div>
-          <button class="navbar-toggler col-auto mb-4" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          <div class="offcanvas d-lg-none d-block offcanvas-start offcanvasMenu" id="demo">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Heading</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <button class="btn btn-secondary" type="button">A Button</button>
+            </div>
+          </div>
+          <button class="navbar-toggler col-auto mb-4" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#demo" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="row col-auto collapse navbar-collapse navbarSupportedContent" id="navbarSupportedContent">
             <div class="navlinks col-auto mt-2 pb-4 px-3">
               <span class=" text-uppercase fw-14 fw-bold">MEN</span>
               <!-- Hover Content-Men -->
-              <div class="content container-fluid">
+              <div class="content container-fluid d-lg-flex d-none">
                 <div class="con col-auto-12 row">
                   <div class="col-auto ms-2 pe-5">
                     <div class="conSection nav-tabs pb-3 mt-2">
@@ -674,7 +696,7 @@
     <!-- Product Details-->
     <div class="container-fluid p-3">
       <div class="row">
-        <div class="container-fluid col-lg-7  productImages">
+        <div class="container-fluid col-lg-7 productImages">
           <div class="row row-cols-2 mb-2 ">
             <img class=" px-0" alt="fig1" src="assets/images/fig1.jpg.png">
             <img alt="fig2" class="" src="assets/images/fig2.jpg">
@@ -717,12 +739,47 @@
               <span class="h6 fw-bold me-4">SELECT SIZE</span>
               <span class="fs-13x text-pink fw-bold">SIZE CHART ></span>
             </div>
-            <div class="mt-3 container-md-auto sizeIcons ">
+            <div class="mt-3 container-md-auto sizeIcons">
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">S</span>
+              <div class="toast show toastPosition">
+                <div class="toast-body">
+                  <p>Garment Measurement : <span class="fw-bold">Chest - 38.0 in</span><br>
+                    The Model(height 6') is wearing a size M
+                  </p>
+                </div>
+              </div>
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">M</span>
+              <div class="toast show toastPosition">
+                <div class="toast-body">
+                  <p>Garment Measurement : <span class="fw-bold">Chest - 40.0 in</span><br>
+                    The Model(height 6') is wearing a size M
+                  </p>
+                </div>
+              </div>
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">L</span>
+              <div class="toast show toastPosition">
+                <div class="toast-body">
+                  <p>Garment Measurement : <span class="fw-bold">Chest - 42.0 in</span><br>
+                    The Model(height 6') is wearing a size M
+                  </p>
+                </div>
+              </div>
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">XL</span>
+              <div class="toast show toastPosition">
+                <div class="toast-body">
+                  <p>Garment Measurement : <span class="fw-bold">Chest - 44.0 in</span><br>
+                    The Model(height 6') is wearing a size M
+                  </p>
+                </div>
+              </div>
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">XLL</span>
+              <div class="toast show toastPosition">
+                <div class="toast-body">
+                  <p>Garment Measurement : <span class="fw-bold">Chest - 47.0 in</span><br>
+                    The Model(height 6') is wearing a size M
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="mt-5">
               <button type="button" class="btn btn-danger addtoBag mb-2">
@@ -1032,10 +1089,10 @@
             </div>
             <div class="row pt-1 col-12-auto">
               <div class="row col-4 border-end pb-2">
-                <div class="col-6">
+                <div class="container-fluid col-6">
                   <span class="fs-55">4.3</span>
                 </div>
-                <div class="col-3 mt-4 pt-3 ms-2">
+                <div class="container-fluid col-3 mt-4 pt-3 ms-2">
                   <i class="fa-solid fa-star text-success"></i>
                 </div>
                 <div class="fs-7">
@@ -1044,10 +1101,10 @@
               </div>
               <div class="col-8 row">
                 <div class="col-2"></div>
-                <div class="col-10 opacity-50">
+                <div class="container-fluid col-10 opacity-50">
                   <div class="row">
                     <div class="col-auto">
-                      <Span class="fs-13x">5</Span>
+                      <span class="fs-13x">5</span>
                       <i class="fa-solid fa-star fs-8x"></i>
                     </div>
                     <div class=" progress col-6 row productratingProgress">
