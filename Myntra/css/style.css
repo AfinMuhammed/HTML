@@ -169,9 +169,23 @@ div .ratings{
   padding: 0 !important;
 }
 .productratingProgress .progress-bar{
-  width:57%;
   margin: 0 !important;
   background-color: green;
+}
+.first{
+  width: 57%;
+}
+.second {
+  width: 30%;
+}
+.productratingProgress .third{
+  width: 17% !important;
+}
+.fourth{
+  width: 9%;
+}
+.fifth{
+  width: 3%;
 }
 .progressRow{
   margin-top: 0 !important;
@@ -251,5 +265,9 @@ div .ratings{
   background-color: white !important;
   padding: 0px !important;
   /* z-index:3 ; */
+}
+
+.offcanvas-links div{
+  cursor: pointer;
 }
 
