@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="headerNav container-fluid py-0 navbar-expand-lg navbar-light pt-4 shadow ps-4 mb-4 bg-white">
+  <div class="headerNav container-fluid py-0 navbar-expand-lg navbar-light pt-4 nav-shadow ps-4 mb-4 bg-white">
     <div class="row ps-4">
       <div class="container d-flex justify-content-between">
         <div class="col-auto row text-start">
@@ -25,12 +25,17 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body offcanvas-links p-3 fw-bold">
-              <div class="p-2 my-1">MEN</div>
+              <div onclick="myFunction(this)" class="pointer p-2 my-1 d-flex justify-content-between">
+                <div>Men</div>
+                <div>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
               <div class="p-2 my-1">WOMEN</div>
               <div class="p-2 my-1">KIDS</div>
               <div class="p-2 my-1">HOME & LIVING</div>
               <div class="p-2 my-1">BEAUTY</div>
-              <div class="p-2 my-1">STUDIO<sup class="sup">new</sup></div>
+              <div class="p-2 my-1">STUDIO<sup class="sup">NEW</sup></div>
             </div>
           </div>
           <button class="navbar-toggler col-auto mb-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1"
@@ -656,15 +661,15 @@
           </div>
           <div class="col-auto pointer">
             <i class="fa-regular fa-user ms-2"></i>
-            <div class="fs-10x">Profile</div>
+            <div class="fs-10x fw-normal">Profile</div>
           </div>
           <div class="col-auto pointer">
             <i class="fa-regular fa-heart ms-2"></i>
-            <div class="fs-10x">Wishlist</div>
+            <div class="fs-10x fw-normal">Wishlist</div>
           </div>
           <div class="col-auto me-3 pointer">
             <i class="fa-solid fa-bag-shopping ms-1"></i>
-            <div class="fs-10x">Bag</div>
+            <div class="fs-10x fw-normal">Bag</div>
           </div>
         </div>
       </div>
@@ -710,13 +715,15 @@
             <div class="h4 fw-bold mb-1">HRX by Hrithik Roshan</div>
             <div class="h5 fw-lighter mb-3">Men Teal Blue Printed Pure Cotton T-shirt</div>
             <a href="#ratings" class="anchor link-dark">
-              <div class=" ratings border col-4 p-0">
-                <div class="m-1">
-                  <span class="fw-bold">4.3</span>
-                  <i class="fa-solid fa-star text-green fs-7 pt-0"></i>
-                  <span class="fs-6 text-secondary">
-                    | 37.2k Ratings
-                  </span>
+              <div class="row ms-1">
+                <div class=" ratings border col-auto p-0">
+                  <div class="m-1">
+                    <span class="fw-bold">4.3</span>
+                    <i class="fa-solid fa-star text-green fs-7 pt-0"></i>
+                    <span class="fs-6 text-secondary">
+                      | 37.2k Ratings
+                    </span>
+                  </div>
                 </div>
               </div>
             </a>
@@ -724,7 +731,7 @@
           <hr class="ms-4">
           <div class="container-fluid mb-2">
             <span class="h4 me-2">Rs. 384</span>
-            <del class="h5 text-dark opacity-75 me-2">Rs. 699</del>
+            <del class="h5 text-dark opacity-75 me-2 fw-normal">Rs. 699</del>
             <span class="h5 text-orange">(45% OFF)</span>
             <div class="text-green fw-bold fs-7 mt-1 mb-3">inclusive of all taxes</div>
             <div class="fw-bolder mb-4">
@@ -733,7 +740,7 @@
             </div>
             <div class="mt-3 container-md-auto sizeIcons">
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">S</span>
-              <div class="toast show toastPosition">
+              <div class="toast hidden toastPosition">
                 <div class="toast-body">
                   <p>Garment Measurement : <span class="fw-bold">Chest - 38.0 in</span><br>
                     The Model(height 6') is wearing a size M
@@ -741,23 +748,24 @@
                 </div>
               </div>
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">M</span>
-              <div class="toast show toastPosition">
+              <div class="toast hidden toastPosition">
                 <div class="toast-body">
                   <p>Garment Measurement : <span class="fw-bold">Chest - 40.0 in</span><br>
                     The Model(height 6') is wearing a size M
                   </p>
                 </div>
               </div>
-              <span class="border rounded-pill px-3 py-2 me-2 mb-3">L</span>
-              <div class="toast show toastPosition">
+              <div class="toast toastPosition">
                 <div class="toast-body">
                   <p>Garment Measurement : <span class="fw-bold">Chest - 42.0 in</span><br>
                     The Model(height 6') is wearing a size M
                   </p>
                 </div>
               </div>
+              <span class="border rounded-pill px-3 py-2 me-2 mb-3">L</span>
+
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">XL</span>
-              <div class="toast show toastPosition">
+              <div class="toast hidden toastPosition">
                 <div class="toast-body">
                   <p>Garment Measurement : <span class="fw-bold">Chest - 44.0 in</span><br>
                     The Model(height 6') is wearing a size M
@@ -765,7 +773,7 @@
                 </div>
               </div>
               <span class="border rounded-pill px-3 py-2 me-2 mb-3">XLL</span>
-              <div class="toast show toastPosition">
+              <div class="toast hidden toastPosition">
                 <div class="toast-body">
                   <p>Garment Measurement : <span class="fw-bold">Chest - 47.0 in</span><br>
                     The Model(height 6') is wearing a size M
@@ -991,12 +999,12 @@
                     <hr class="me-4 mb-1">
                   </div>
                 </div>
-                <div class="pointer" data-bs-toggle="collapse" data-bs-target="#demo">
-                  <span class="text-danger fs-6">
+                <div class="pointer" data-bs-toggle="collapse" data-bs-target="#SeeMore">
+                  <span onclick="$('#target').toggle();" id="target" class="text-danger fs-6">
                     See More
                   </span>
                 </div>
-                <div class="collapse" id="demo">
+                <div class="collapse" id="SeeMore">
                   <div class="fw-normal row row-cols-2">
                     <div class="text-capitalize">
                       <span class="fs-7 opacity-75">
@@ -2081,6 +2089,11 @@
     </div>
   </div>
   <!--//footer-->
+  <script>
+    function myFunction(x) {
+  x.css({"color": "red", "border": "2px solid red"});;
+}
+  </script>
   <script src="js/jq.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
