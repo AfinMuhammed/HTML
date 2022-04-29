@@ -25,13 +25,31 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body offcanvas-links p-3 fw-bold">
-              <div onclick="myFunction(this)" class="pointer p-2 my-1 d-flex justify-content-between">
-                <div>Men</div>
+              <div class="togglemenu pointer p-2 my-1 d-flex justify-content-between">
+                <div>MEN</div>
                 <div>
-                  <i class="fa-solid fa-angle-right"></i>
+                  <i class="fa-solid fa-angle-right dropdown"></i>
                 </div>
               </div>
-              <div class="p-2 my-1">WOMEN</div>
+              <div class="container fw-normal contentMenu">
+                <div class="togglemenu pointer p-2 my-1 d-flex justify-content-between">
+                  <div>MEN</div>
+                  <div>
+                    <i class="fa-solid fa-angle-right dropdown"></i>
+                  </div>
+                </div>
+                <div class="container contentMenu">
+                  asgasg
+                </div>
+              </div>
+              <div class="togglemenu pointer p-2 my-1 d-flex justify-content-between">
+              <div>WOMEN</div>
+              <div>
+                <i class="fa-solid fa-angle-right dropdown"></i>
+              </div>
+              </div><div class="container contentMenu">
+                asgasg
+              </div>
               <div class="p-2 my-1">KIDS</div>
               <div class="p-2 my-1">HOME & LIVING</div>
               <div class="p-2 my-1">BEAUTY</div>
@@ -2089,13 +2107,18 @@
     </div>
   </div>
   <!--//footer-->
-  <script>
-    function myFunction(x) {
-  x.css({"color": "red", "border": "2px solid red"});;
-}
-  </script>
+
   <script src="js/jq.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+          $(".togglemenu").click(function () {
+              $(this).find("i").toggle();
+              $(this).next().toggle();
+              })
+          });
+  </script>
 </body>
 
 </html>

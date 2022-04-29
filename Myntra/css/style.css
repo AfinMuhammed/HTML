@@ -277,3 +277,6 @@ div .ratings{
 .offcanvas-links div{
   cursor: pointer;
 }
+.contentMenu{
+  display: none;
+}
