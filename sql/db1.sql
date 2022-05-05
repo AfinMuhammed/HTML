@@ -3,6 +3,7 @@ create table Employees (emp_id int,emp_name varchar(15),job_name varchar(20),man
 create table Departments(dep_id int,dep_name varchar(20),dep_location varchar(15));
 create table salary_grade(grade int,min_salary int,max_salary int);
 show tables from db1;
+SELECT COUNT(*) FROM EMPLOYEES;
 insert into employees(emp_id,emp_name,job_name,hire_date,salary,dep_id) values(68319,"KAYLING","PRESIDENT","1991-11-18",6000.00,1001);
 select * from employees;
 insert into employees values(68319,"KAYLING","PRESIDENT",NULL,"1991-11-18",6000.00,null,1001);
@@ -45,7 +46,7 @@ insert into departments values(1001,"Name1","TVM");
 truncate departments;
 select * from employees;
 SELECT * from employees where emp_name = "BLAZE";
-select emp_name, concat('$',salary+salary*15/100) as Salary from employees;
+select emp_name, concat('$',ROUND(salary+salary*15/100)) as Salary from employees;
 select emp_id,emp_name,salary,date_format(hire_date,"%M %e %Y") from employees;
 select * from employees where salary+salary*25/100 > 3000;
 select * from employees where date_format(hire_date, "%m") = 02;

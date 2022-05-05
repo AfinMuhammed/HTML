@@ -16,5 +16,14 @@ insert into employees values(65271,"WADE","SALESMAN",66928,"1991-02-22",1350.00,
 insert into employees values(66564,"MADDEN","SALESMAN",66928,"1991-09-20",1350.00,1500.00,3001);
 insert into employees values(68454,"TUCKER","SALESMAN",66928,"1991-09-08",1600.00,0.00,3001);
 insert into employees values(68736,"ADNRES","CLERK",67858,"1991-05-23",1200.00,null,2001);
-insert into employees values(001,"    ADNRES","CLERK",67858,"1991-05-23",1200.00,null,2001);
-insert into employees values(002,"ADNRES   adi","CLERK",67858,"1991-05-23",1200.00,null,2001);
+insert into employees values(69000,"JULIUS","CLERK",66928,"1991-12-03",1050.00,null,3001);
+insert into employees values(69324,"MARKER","CLERK",67832,"1991-01-23",1400.00,null,1001);
+select * from employees;
+select salary from employees;
+select distinct job_name from employees;
+select emp_name, concat('$',ROUND(salary+salary*15/100)) as Salary from employees;
+select concat(emp_name,'   ',job_name) as "Employee & Job" from employees;
+select emp_id,emp_name,salary,date_format(hire_date,"%M %e %Y") from employees;
+SELECT length(trim(emp_name)) as "LENGTH" FROM employees;
+SELECT emp_id,salary,commission from employees;
+select distinct dep_id,job_name from employees;
