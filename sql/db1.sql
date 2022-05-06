@@ -23,6 +23,7 @@ update employees set commission=0 where emp_id=68454;
 select salary from employees;
 alter table Departments modify dep_id integer primary key;
 desc salary_grade;
+select * from salary_grade;
 alter table salary_grade modify grade int Primary key;
 select distinct job_name from employees;
 SELECT emp_name, salary as sal FROM employees;
@@ -69,4 +70,9 @@ SELECT employees.emp_id,departments.dep_id,departments.dep_location,departments.
 select manager_id,count(manager_id) as  count from employees group by manager_id order by manager_id;
 select dep_id,count(dep_id) from employees group by dep_id having count(dep_id) > 2;
 select * from employees where emp_name like '%ar%';
+
+SELECT employees.emp_name,employees.salary from employees, salary_grade
+WHERE employees.emp_name = 'frank' AND employees.salary BETWEEN salary_grade.min_salary AND salary_grade.max_salary
+AND employees.salary = salary_grade.max_salary;
+-- select emp_name, salary from employees,salary_grade where employees.emp_name="frank" between salary_grade.min_sal and salary_grade.max_sal;
 
